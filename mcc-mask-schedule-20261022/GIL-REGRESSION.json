@@ -1,0 +1,17 @@
+{
+  "old_thread_error": "slot_lateness_exceeded",
+  "old_thread_packets": 0,
+  "tested_source_hashes": {
+    "mask_sender.py": "ab669c5dcc3ed4cfe361f94dc26c41ef9a3a4f49b782265fa6a7df7a4705fa7e",
+    "mask_transport.py": "c117686b7364d46138d5d72c5d7299951cc0819274c2edbacc5de07e1a9ce825"
+  },
+  "isolated_packets_received": 10,
+  "isolated_pid": 34124,
+  "parent_pid": 55696,
+  "visible_owned_windows": 0,
+  "window_s": 2.0,
+  "guard_s": 0.1,
+  "max_lateness_s": 0.02,
+  "scope": "local controlled GIL contention; not proof of exact historical pause or live VM acceptance",
+  "owned_child_exited": true
+}

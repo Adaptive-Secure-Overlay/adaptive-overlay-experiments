@@ -1,0 +1,351 @@
+{
+  "status": "pass",
+  "passed": 86,
+  "total": 86,
+  "checks": [
+    {
+      "check": "required file: PLAN.md",
+      "pass": true
+    },
+    {
+      "check": "required file: FINAL-REPORT.md",
+      "pass": true
+    },
+    {
+      "check": "required file: manifest.json",
+      "pass": true
+    },
+    {
+      "check": "required file: 01-threshold-calibration\\PASSPORT.md",
+      "pass": true
+    },
+    {
+      "check": "required file: 01-threshold-calibration\\raw-counts.csv",
+      "pass": true
+    },
+    {
+      "check": "required file: 01-threshold-calibration\\aggregate.csv",
+      "pass": true
+    },
+    {
+      "check": "required file: 01-threshold-calibration\\result.json",
+      "pass": true
+    },
+    {
+      "check": "required file: 02-cascade-length\\PASSPORT.md",
+      "pass": true
+    },
+    {
+      "check": "required file: 02-cascade-length\\raw-trials.csv",
+      "pass": true
+    },
+    {
+      "check": "required file: 02-cascade-length\\aggregate-by-hops.csv",
+      "pass": true
+    },
+    {
+      "check": "required file: 02-cascade-length\\result.json",
+      "pass": true
+    },
+    {
+      "check": "required file: 03-trust-registry-negative\\PASSPORT.md",
+      "pass": true
+    },
+    {
+      "check": "required file: 03-trust-registry-negative\\raw-negative-cases.csv",
+      "pass": true
+    },
+    {
+      "check": "required file: 03-trust-registry-negative\\result.json",
+      "pass": true
+    },
+    {
+      "check": "required file: 04-concurrent-starts\\PASSPORT.md",
+      "pass": true
+    },
+    {
+      "check": "required file: 04-concurrent-starts\\raw-normalized.csv",
+      "pass": true
+    },
+    {
+      "check": "required file: 04-concurrent-starts\\aggregate-by-scenario.csv",
+      "pass": true
+    },
+    {
+      "check": "required file: 04-concurrent-starts\\result.json",
+      "pass": true
+    },
+    {
+      "check": "01-threshold-calibration passport marker Гипотеза:",
+      "pass": true
+    },
+    {
+      "check": "01-threshold-calibration passport marker Параметры:",
+      "pass": true
+    },
+    {
+      "check": "01-threshold-calibration passport marker Стенд и версии:",
+      "pass": true
+    },
+    {
+      "check": "01-threshold-calibration passport marker Число прогонов:",
+      "pass": true
+    },
+    {
+      "check": "01-threshold-calibration passport marker Критерий успеха:",
+      "pass": true
+    },
+    {
+      "check": "01-threshold-calibration passport marker Сырой артефакт:",
+      "pass": true
+    },
+    {
+      "check": "01-threshold-calibration passport marker Агрегат:",
+      "pass": true
+    },
+    {
+      "check": "02-cascade-length passport marker Гипотеза:",
+      "pass": true
+    },
+    {
+      "check": "02-cascade-length passport marker Параметры:",
+      "pass": true
+    },
+    {
+      "check": "02-cascade-length passport marker Стенд и версии:",
+      "pass": true
+    },
+    {
+      "check": "02-cascade-length passport marker Число прогонов:",
+      "pass": true
+    },
+    {
+      "check": "02-cascade-length passport marker Критерий успеха:",
+      "pass": true
+    },
+    {
+      "check": "02-cascade-length passport marker Сырой артефакт:",
+      "pass": true
+    },
+    {
+      "check": "02-cascade-length passport marker Агрегат:",
+      "pass": true
+    },
+    {
+      "check": "03-trust-registry-negative passport marker Гипотеза:",
+      "pass": true
+    },
+    {
+      "check": "03-trust-registry-negative passport marker Параметры:",
+      "pass": true
+    },
+    {
+      "check": "03-trust-registry-negative passport marker Стенд и версии:",
+      "pass": true
+    },
+    {
+      "check": "03-trust-registry-negative passport marker Число прогонов:",
+      "pass": true
+    },
+    {
+      "check": "03-trust-registry-negative passport marker Критерий успеха:",
+      "pass": true
+    },
+    {
+      "check": "03-trust-registry-negative passport marker Сырой артефакт:",
+      "pass": true
+    },
+    {
+      "check": "03-trust-registry-negative passport marker Агрегат:",
+      "pass": true
+    },
+    {
+      "check": "04-concurrent-starts passport marker Гипотеза:",
+      "pass": true
+    },
+    {
+      "check": "04-concurrent-starts passport marker Параметры:",
+      "pass": true
+    },
+    {
+      "check": "04-concurrent-starts passport marker Стенд и версии:",
+      "pass": true
+    },
+    {
+      "check": "04-concurrent-starts passport marker Число прогонов:",
+      "pass": true
+    },
+    {
+      "check": "04-concurrent-starts passport marker Критерий успеха:",
+      "pass": true
+    },
+    {
+      "check": "04-concurrent-starts passport marker Сырой артефакт:",
+      "pass": true
+    },
+    {
+      "check": "04-concurrent-starts passport marker Агрегат:",
+      "pass": true
+    },
+    {
+      "check": "threshold raw has 16 boundary rows",
+      "pass": true
+    },
+    {
+      "check": "threshold aggregate has 8 cases",
+      "pass": true
+    },
+    {
+      "check": "threshold trials are 50000 per boundary",
+      "pass": true
+    },
+    {
+      "check": "threshold Monte Carlo error <= 0.01",
+      "pass": true
+    },
+    {
+      "check": "threshold exact crossing holds",
+      "pass": true
+    },
+    {
+      "check": "cascade raw has 1200 trials",
+      "pass": true
+    },
+    {
+      "check": "cascade has 400 trials per H",
+      "pass": true
+    },
+    {
+      "check": "cascade aggregate has H=3/4/5",
+      "pass": true
+    },
+    {
+      "check": "cascade all trials succeeded",
+      "pass": true
+    },
+    {
+      "check": "cascade has 2400 transmitted ping packets",
+      "pass": true
+    },
+    {
+      "check": "cascade has 2394 received ping packets",
+      "pass": true
+    },
+    {
+      "check": "cascade observed losses are preserved by H",
+      "pass": true
+    },
+    {
+      "check": "trust registry has four negative cases",
+      "pass": true
+    },
+    {
+      "check": "three local trust guards reject bad input",
+      "pass": true
+    },
+    {
+      "check": "remote key substitution gap is observed",
+      "pass": true
+    },
+    {
+      "check": "protected trust registry remains fail-closed blocker",
+      "pass": true
+    },
+    {
+      "check": "concurrent raw has 27 rows",
+      "pass": true
+    },
+    {
+      "check": "concurrent aggregate has four scenarios",
+      "pass": true
+    },
+    {
+      "check": "concurrent all rows succeeded",
+      "pass": true
+    },
+    {
+      "check": "concurrent all rows have zero loss",
+      "pass": true
+    },
+    {
+      "check": "concurrent direct final A/B IKE is zero",
+      "pass": true
+    },
+    {
+      "check": "manifest records offline-only execution",
+      "pass": true
+    },
+    {
+      "check": "manifest hash: PLAN.md",
+      "pass": true
+    },
+    {
+      "check": "manifest hash: FINAL-REPORT.md",
+      "pass": true
+    },
+    {
+      "check": "manifest hash: 01-threshold-calibration\\PASSPORT.md",
+      "pass": true
+    },
+    {
+      "check": "manifest hash: 01-threshold-calibration\\raw-counts.csv",
+      "pass": true
+    },
+    {
+      "check": "manifest hash: 01-threshold-calibration\\aggregate.csv",
+      "pass": true
+    },
+    {
+      "check": "manifest hash: 01-threshold-calibration\\result.json",
+      "pass": true
+    },
+    {
+      "check": "manifest hash: 02-cascade-length\\PASSPORT.md",
+      "pass": true
+    },
+    {
+      "check": "manifest hash: 02-cascade-length\\raw-trials.csv",
+      "pass": true
+    },
+    {
+      "check": "manifest hash: 02-cascade-length\\aggregate-by-hops.csv",
+      "pass": true
+    },
+    {
+      "check": "manifest hash: 02-cascade-length\\result.json",
+      "pass": true
+    },
+    {
+      "check": "manifest hash: 03-trust-registry-negative\\PASSPORT.md",
+      "pass": true
+    },
+    {
+      "check": "manifest hash: 03-trust-registry-negative\\raw-negative-cases.csv",
+      "pass": true
+    },
+    {
+      "check": "manifest hash: 03-trust-registry-negative\\result.json",
+      "pass": true
+    },
+    {
+      "check": "manifest hash: 04-concurrent-starts\\PASSPORT.md",
+      "pass": true
+    },
+    {
+      "check": "manifest hash: 04-concurrent-starts\\raw-normalized.csv",
+      "pass": true
+    },
+    {
+      "check": "manifest hash: 04-concurrent-starts\\aggregate-by-scenario.csv",
+      "pass": true
+    },
+    {
+      "check": "manifest hash: 04-concurrent-starts\\result.json",
+      "pass": true
+    },
+    {
+      "check": "generated artifacts contain no obvious private-key/password material",
+      "pass": true
+    }
+  ]
+}

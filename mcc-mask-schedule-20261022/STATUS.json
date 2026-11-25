@@ -1,0 +1,45 @@
+{
+  "at_utc": "2026-10-22T17:10:33.651103+00:00",
+  "stage": "prepared_memory_gate_passed_not_launched",
+  "revision": "r8",
+  "startup_physical_gib": 48,
+  "startup_commit_gib": 36,
+  "runtime_reserve_gib": 16,
+  "full_load_stability_s": 30,
+  "local_tests": {
+    "run": 127,
+    "passed": 127
+  },
+  "candidate_and_buffers_unchanged": true,
+  "memory": {
+    "at_utc": "2026-10-22T17:10:33.651103+00:00",
+    "available_physical": 54146224128,
+    "process_available_commit": 41033752576,
+    "system_available_commit": 41034014720,
+    "system_commit_total": 68199682048,
+    "system_commit_limit": 109233696768,
+    "system_commit_peak": 71145738240,
+    "system_physical_total": 102791245824,
+    "performance_physical_available": 54146547712,
+    "job": {
+      "inside_job": true,
+      "limit_flags": 10240,
+      "process_memory_limited": false,
+      "job_memory_limited": false,
+      "process_memory_limit": 0,
+      "job_memory_limit": 0,
+      "peak_job_memory_used": 44265472
+    },
+    "new_VM_launches": 0,
+    "new_connections": 0,
+    "passed": true,
+    "physical_floor_gib": 48,
+    "commit_floor_gib": 36,
+    "authorizes": "copy preparation only; IKE requires fresh full-load stability grant"
+  },
+  "new_vm_launches": 0,
+  "new_connections": 0,
+  "remaining_connections": 19,
+  "launch_receipt_created": false,
+  "next_action": "Fresh isolation, mutex and sealed-input precheck before any authorized hidden submission; full-load memory grant still required before IKE."
+}

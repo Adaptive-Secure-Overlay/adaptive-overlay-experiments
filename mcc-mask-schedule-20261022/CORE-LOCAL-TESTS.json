@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "tests_run": 88,
+  "skipped": 1,
+  "source": "C:\\Codex\\Candidate\\Experiments\\mcc_mask_schedule_20261022_r6\\candidate-copy\\code",
+  "node_daemon_sha256": "01785ee2349f8c983557c591ad0efc2b8ee3e3706781a4ae28a29de020230984",
+  "network_used": false,
+  "live_ike_esp_verified": false
+}

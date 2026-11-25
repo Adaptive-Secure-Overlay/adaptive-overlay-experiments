@@ -1,0 +1,5 @@
+case,expected,observed,message,criterion_pass
+local_public_key_substitution,reject,reject,private key does not match public key for NodeA,True
+missing_member_key,reject,reject,public-key directory is incomplete for members: NodeD,True
+unknown_destination,reject,reject,unknown cascade destination Rogue,True
+remote_public_key_substitution_without_signed_registry,reject_if_registry_authenticated,accept,remote directory entry accepted; no signed registry provenance check is present in this constructor path,True

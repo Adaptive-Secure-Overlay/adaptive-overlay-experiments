@@ -1,0 +1,60 @@
+{
+  "format": 1,
+  "backend_artifact": "C:\\isolated-eve-lab\\example-backend.exe",
+  "backend_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "backend_version": "TODO",
+  "endpoint_configs": {
+    "n1": "C:\\isolated-eve-lab\\example-n1.conf",
+    "n2": "C:\\isolated-eve-lab\\example-n2.conf",
+    "n3": "C:\\isolated-eve-lab\\example-n3.conf",
+    "n4": "C:\\isolated-eve-lab\\example-n4.conf",
+    "n5": "C:\\isolated-eve-lab\\example-n5.conf",
+    "n6": "C:\\isolated-eve-lab\\example-n6.conf",
+    "n7": "C:\\isolated-eve-lab\\example-n7.conf",
+    "n8": "C:\\isolated-eve-lab\\example-n8.conf",
+    "n9": "C:\\isolated-eve-lab\\example-n9.conf",
+    "n10": "C:\\isolated-eve-lab\\example-n10.conf"
+  },
+  "nodes": [
+    {"logical_id": "n1", "eve_name": "example-n1", "role": "endpoint", "scope": "isolated-eve-lab"},
+    {"logical_id": "n2", "eve_name": "example-n2", "role": "endpoint", "scope": "isolated-eve-lab"},
+    {"logical_id": "n3", "eve_name": "example-n3", "role": "endpoint", "scope": "isolated-eve-lab"},
+    {"logical_id": "n4", "eve_name": "example-n4", "role": "endpoint", "scope": "isolated-eve-lab"},
+    {"logical_id": "n5", "eve_name": "example-n5", "role": "endpoint", "scope": "isolated-eve-lab"},
+    {"logical_id": "n6", "eve_name": "example-n6", "role": "endpoint", "scope": "isolated-eve-lab"},
+    {"logical_id": "n7", "eve_name": "example-n7", "role": "endpoint", "scope": "isolated-eve-lab"},
+    {"logical_id": "n8", "eve_name": "example-n8", "role": "endpoint", "scope": "isolated-eve-lab"},
+    {"logical_id": "n9", "eve_name": "example-n9", "role": "endpoint", "scope": "isolated-eve-lab"},
+    {"logical_id": "n10", "eve_name": "example-n10", "role": "endpoint", "scope": "isolated-eve-lab"},
+    {"logical_id": "x1", "eve_name": "example-x1", "role": "relay", "scope": "isolated-eve-lab"},
+    {"logical_id": "x2", "eve_name": "example-x2", "role": "relay", "scope": "isolated-eve-lab"}
+  ],
+  "daemon_binding": {
+    "protocol": "wireguard",
+    "send_entrypoint": "send_protocol_datagram",
+    "deliver_entrypoint": "deliver_protocol_datagram",
+    "evidence_path": "C:\\isolated-eve-lab\\example-daemon-binding.txt"
+  },
+  "scope": {
+    "namespace": "TODO",
+    "interface": "TODO",
+    "udp_ports": [51820],
+    "proof_path": "C:\\isolated-eve-lab\\example-scope-proof.txt"
+  },
+  "capabilities": {
+    "capture": true,
+    "inject": true,
+    "preserve_tuple": true,
+    "type4_direct_bypass": true,
+    "events": true,
+    "redaction": true,
+    "loop_prevention": true
+  },
+  "rollback": {
+    "original_state_snapshot": "C:\\isolated-eve-lab\\example-original-state.txt",
+    "scope_proof": "C:\\isolated-eve-lab\\example-rollback-scope.txt",
+    "restore_procedure": "C:\\isolated-eve-lab\\example-restore-procedure.txt",
+    "verification_evidence": "C:\\isolated-eve-lab\\example-rollback-verified.txt",
+    "verified_at": "TODO"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "status": "completed_offline_eve_reanalysis",
+  "hypothesis": "The preserved simultaneous-start scenarios complete without loss or direct final A/B IKE, while setup latency exposes a concurrency tail.",
+  "parameters": {
+    "scenarios": {
+      "bidir12": 2,
+      "disjoint5": 5,
+      "ring10": 10,
+      "reverse5": 10
+    },
+    "environment": [
+      "IKE_PRIVACY_OVERLAY=1",
+      "IKE_PRIVACY_INLINE=1",
+      "PRECONNECT_ENABLED=0",
+      "OVERLAY_ACTIVE_USERS=User1..User10"
+    ]
+  },
+  "success_criterion": "27 normalized rows, success=true and packet loss 0% for every row, and zero direct final A/B IKE packets.",
+  "criterion_pass": true,
+  "source_hashes": {
+    "C:\\Codex\\Candidate\\Testing-EVE-NG\\LegacyWorkspace\\concurrent_inline_bidir12_v5.csv": "291A8747C8561F86C3153892B3CCD62FF3F91B6ABD2AC93A3FDFEAA9F5F67203",
+    "C:\\Codex\\Candidate\\Testing-EVE-NG\\LegacyWorkspace\\concurrent_inline_disjoint5_v2.csv": "00ECA765F7B69D17069B8125A30C1902C9E2C0E7F1864BE8D6F891CDFC911C32",
+    "C:\\Codex\\Candidate\\Testing-EVE-NG\\LegacyWorkspace\\concurrent_inline_ring10_v3.csv": "2C71E3B73557C96B5153FD5B64DB3EC5BF381F5D3909DC6730D256B7A4EBA211",
+    "C:\\Codex\\Candidate\\Testing-EVE-NG\\LegacyWorkspace\\concurrent_inline_reverse5_v2.csv": "D3373B33DF493335ADA9C361DB819026D1FA16C5E423710BA5CD6299D5E8E3EB"
+  },
+  "raw": "C:\\Codex\\Candidate\\Testing-EVE-NG\\remarks-closure-20260903\\04-concurrent-starts\\raw-normalized.csv",
+  "aggregate": "C:\\Codex\\Candidate\\Testing-EVE-NG\\remarks-closure-20260903\\04-concurrent-starts\\aggregate-by-scenario.csv",
+  "aggregate_rows": [
+    {
+      "scenario": "bidir12",
+      "simultaneous_starts": 2,
+      "rows": 2,
+      "successes": 2,
+      "success_rate": 1.0,
+      "mean_loss_pct": 0.0,
+      "max_loss_pct": 0.0,
+      "rtt_mean_ms": 2.638,
+      "rtt_median_ms": 2.638,
+      "rtt_p95_ms": 2.9386,
+      "rtt_max_ms": 2.972,
+      "setup_median_s": 0.0825,
+      "setup_p95_s": 0.11265,
+      "setup_max_s": 0.116,
+      "esp_packets_total": 32,
+      "esp_packets_mean": 16.0,
+      "direct_final_ab_ike_packets_total": 0
+    },
+    {
+      "scenario": "disjoint5",
+      "simultaneous_starts": 5,
+      "rows": 5,
+      "successes": 5,
+      "success_rate": 1.0,
+      "mean_loss_pct": 0.0,
+      "max_loss_pct": 0.0,
+      "rtt_mean_ms": 3.2886,
+      "rtt_median_ms": 2.066,
+      "rtt_p95_ms": 7.0646,
+      "rtt_max_ms": 8.307,
+      "setup_median_s": 0.069,
+      "setup_p95_s": 0.0746,
+      "setup_max_s": 0.075,
+      "esp_packets_total": 40,
+      "esp_packets_mean": 8.0,
+      "direct_final_ab_ike_packets_total": 0
+    },
+    {
+      "scenario": "ring10",
+      "simultaneous_starts": 10,
+      "rows": 10,
+      "successes": 10,
+      "success_rate": 1.0,
+      "mean_loss_pct": 0.0,
+      "max_loss_pct": 0.0,
+      "rtt_mean_ms": 3.2322,
+      "rtt_median_ms": 3.156,
+      "rtt_p95_ms": 3.86995,
+      "rtt_max_ms": 3.919,
+      "setup_median_s": 0.353,
+      "setup_p95_s": 189.4161,
+      "setup_max_s": 189.426,
+      "esp_packets_total": 80,
+      "esp_packets_mean": 8.0,
+      "direct_final_ab_ike_packets_total": 0
+    },
+    {
+      "scenario": "reverse5",
+      "simultaneous_starts": 10,
+      "rows": 10,
+      "successes": 10,
+      "success_rate": 1.0,
+      "mean_loss_pct": 0.0,
+      "max_loss_pct": 0.0,
+      "rtt_mean_ms": 3.0088,
+      "rtt_median_ms": 3.0375,
+      "rtt_p95_ms": 3.90585,
+      "rtt_max_ms": 4.152,
+      "setup_median_s": 0.214,
+      "setup_p95_s": 11.30325,
+      "setup_max_s": 11.31,
+      "esp_packets_total": 160,
+      "esp_packets_mean": 16.0,
+      "direct_final_ab_ike_packets_total": 0
+    }
+  ],
+  "limited_conclusion": "Within four preserved scenarios (2, 5, and 10 simultaneous starts), completion and loss criteria hold. The small non-random matrix and historical software snapshot do not establish a universal load limit."
+}

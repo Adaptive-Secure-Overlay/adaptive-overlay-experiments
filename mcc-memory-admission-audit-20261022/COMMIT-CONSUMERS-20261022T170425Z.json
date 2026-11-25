@@ -1,0 +1,1368 @@
+{
+  "audit": {
+    "at_utc": "2026-10-22T17:02:58.1985018Z",
+    "process_count": 1022,
+    "total_process_private_bytes": 44051030016,
+    "groups": [
+      {
+        "name": "node",
+        "count": 149,
+        "private_bytes": 7130877952,
+        "working_set_bytes": 9537564672
+      },
+      {
+        "name": "python",
+        "count": 37,
+        "private_bytes": 6833549312,
+        "working_set_bytes": 2848763904
+      },
+      {
+        "name": "ChatGPT",
+        "count": 23,
+        "private_bytes": 5957263360,
+        "working_set_bytes": 5856100352
+      },
+      {
+        "name": "browser",
+        "count": 33,
+        "private_bytes": 5669474304,
+        "working_set_bytes": 4668985344
+      },
+      {
+        "name": "codex",
+        "count": 25,
+        "private_bytes": 3408273408,
+        "working_set_bytes": 5263781888
+      },
+      {
+        "name": "chrome",
+        "count": 24,
+        "private_bytes": 2862755840,
+        "working_set_bytes": 2298703872
+      },
+      {
+        "name": "msedge",
+        "count": 31,
+        "private_bytes": 2627575808,
+        "working_set_bytes": 2254757888
+      },
+      {
+        "name": "msedgewebview2",
+        "count": 20,
+        "private_bytes": 1427795968,
+        "working_set_bytes": 1626271744
+      },
+      {
+        "name": "Antigravity",
+        "count": 6,
+        "private_bytes": 790466560,
+        "working_set_bytes": 1073442816
+      },
+      {
+        "name": "Telegram",
+        "count": 1,
+        "private_bytes": 772014080,
+        "working_set_bytes": 363741184
+      },
+      {
+        "name": "Яндекс Музыка",
+        "count": 6,
+        "private_bytes": 627322880,
+        "working_set_bytes": 881291264
+      },
+      {
+        "name": "language_server",
+        "count": 1,
+        "private_bytes": 570429440,
+        "working_set_bytes": 561807360
+      },
+      {
+        "name": "explorer",
+        "count": 1,
+        "private_bytes": 548450304,
+        "working_set_bytes": 382382080
+      },
+      {
+        "name": "Everything",
+        "count": 1,
+        "private_bytes": 520429568,
+        "working_set_bytes": 531972096
+      },
+      {
+        "name": "NVIDIA Overlay",
+        "count": 5,
+        "private_bytes": 370249728,
+        "working_set_bytes": 330653696
+      },
+      {
+        "name": "pwsh",
+        "count": 10,
+        "private_bytes": 366678016,
+        "working_set_bytes": 746020864
+      },
+      {
+        "name": "node_repl",
+        "count": 90,
+        "private_bytes": 359604224,
+        "working_set_bytes": 1358245888
+      },
+      {
+        "name": "conhost",
+        "count": 257,
+        "private_bytes": 321835008,
+        "working_set_bytes": 1824350208
+      },
+      {
+        "name": "WhatsApp.Root",
+        "count": 2,
+        "private_bytes": 316321792,
+        "working_set_bytes": 506966016
+      },
+      {
+        "name": "YandexTelemost",
+        "count": 1,
+        "private_bytes": 262172672,
+        "working_set_bytes": 171225088
+      },
+      {
+        "name": "SamsungMagician",
+        "count": 4,
+        "private_bytes": 230780928,
+        "working_set_bytes": 102764544
+      },
+      {
+        "name": "esrv",
+        "count": 1,
+        "private_bytes": 177975296,
+        "working_set_bytes": 50864128
+      },
+      {
+        "name": "cmd",
+        "count": 35,
+        "private_bytes": 170745856,
+        "working_set_bytes": 251891712
+      },
+      {
+        "name": "Taskmgr",
+        "count": 1,
+        "private_bytes": 164261888,
+        "working_set_bytes": 273227776
+      },
+      {
+        "name": "StartMenuExperienceHost",
+        "count": 1,
+        "private_bytes": 130977792,
+        "working_set_bytes": 143253504
+      },
+      {
+        "name": "SystemSettings",
+        "count": 1,
+        "private_bytes": 122204160,
+        "working_set_bytes": 65925120
+      },
+      {
+        "name": "PhoneExperienceHost",
+        "count": 1,
+        "private_bytes": 102027264,
+        "working_set_bytes": 161591296
+      },
+      {
+        "name": "SearchHost",
+        "count": 1,
+        "private_bytes": 95989760,
+        "working_set_bytes": 124502016
+      },
+      {
+        "name": "AnyDesk",
+        "count": 2,
+        "private_bytes": 92942336,
+        "working_set_bytes": 51982336
+      },
+      {
+        "name": "nvcontainer",
+        "count": 2,
+        "private_bytes": 76640256,
+        "working_set_bytes": 131694592
+      },
+      {
+        "name": "QtWebEngineProcess",
+        "count": 1,
+        "private_bytes": 69070848,
+        "working_set_bytes": 103231488
+      },
+      {
+        "name": "OneDrive.Sync.Service",
+        "count": 1,
+        "private_bytes": 68767744,
+        "working_set_bytes": 51183616
+      },
+      {
+        "name": "TextInputHost",
+        "count": 1,
+        "private_bytes": 67031040,
+        "working_set_bytes": 87617536
+      },
+      {
+        "name": "codex-computer-use-swift",
+        "count": 1,
+        "private_bytes": 61763584,
+        "working_set_bytes": 45494272
+      },
+      {
+        "name": "codex-code-mode-host",
+        "count": 1,
+        "private_bytes": 59437056,
+        "working_set_bytes": 59699200
+      },
+      {
+        "name": "wireguard",
+        "count": 1,
+        "private_bytes": 58212352,
+        "working_set_bytes": 32247808
+      },
+      {
+        "name": "svchost",
+        "count": 9,
+        "private_bytes": 57393152,
+        "working_set_bytes": 239255552
+      },
+      {
+        "name": "ApplicationFrameHost",
+        "count": 1,
+        "private_bytes": 56127488,
+        "working_set_bytes": 58339328
+      },
+      {
+        "name": "CrossDeviceResume",
+        "count": 1,
+        "private_bytes": 55205888,
+        "working_set_bytes": 50749440
+      },
+      {
+        "name": "ShellHost",
+        "count": 1,
+        "private_bytes": 54898688,
+        "working_set_bytes": 56066048
+      },
+      {
+        "name": "pythonw",
+        "count": 5,
+        "private_bytes": 50339840,
+        "working_set_bytes": 16470016
+      },
+      {
+        "name": "DSATray",
+        "count": 1,
+        "private_bytes": 34488320,
+        "working_set_bytes": 103108608
+      },
+      {
+        "name": "RuntimeBroker",
+        "count": 6,
+        "private_bytes": 32083968,
+        "working_set_bytes": 147116032
+      },
+      {
+        "name": "postgres",
+        "count": 9,
+        "private_bytes": 29986816,
+        "working_set_bytes": 9981952
+      },
+      {
+        "name": "CrossDeviceService",
+        "count": 1,
+        "private_bytes": 28426240,
+        "working_set_bytes": 88158208
+      },
+      {
+        "name": "audiodg",
+        "count": 1,
+        "private_bytes": 20148224,
+        "working_set_bytes": 28868608
+      },
+      {
+        "name": "ssh",
+        "count": 5,
+        "private_bytes": 17297408,
+        "working_set_bytes": 38416384
+      },
+      {
+        "name": "AppActions",
+        "count": 1,
+        "private_bytes": 14274560,
+        "working_set_bytes": 47853568
+      },
+      {
+        "name": "NativeLauncher",
+        "count": 1,
+        "private_bytes": 14069760,
+        "working_set_bytes": 18169856
+      },
+      {
+        "name": "DataExchangeHost",
+        "count": 1,
+        "private_bytes": 12664832,
+        "working_set_bytes": 40161280
+      },
+      {
+        "name": "Widgets",
+        "count": 1,
+        "private_bytes": 11128832,
+        "working_set_bytes": 56344576
+      },
+      {
+        "name": "taskhostw",
+        "count": 1,
+        "private_bytes": 9240576,
+        "working_set_bytes": 24252416
+      },
+      {
+        "name": "sihost",
+        "count": 1,
+        "private_bytes": 8982528,
+        "working_set_bytes": 52703232
+      },
+      {
+        "name": "ctfmon",
+        "count": 1,
+        "private_bytes": 8458240,
+        "working_set_bytes": 35254272
+      },
+      {
+        "name": "extension-host",
+        "count": 3,
+        "private_bytes": 6234112,
+        "working_set_bytes": 18964480
+      },
+      {
+        "name": "rudesktop",
+        "count": 1,
+        "private_bytes": 5967872,
+        "working_set_bytes": 21671936
+      },
+      {
+        "name": "WidgetService",
+        "count": 1,
+        "private_bytes": 5332992,
+        "working_set_bytes": 24363008
+      },
+      {
+        "name": "vmware-tray",
+        "count": 1,
+        "private_bytes": 3969024,
+        "working_set_bytes": 13758464
+      },
+      {
+        "name": "GameInputRedistService",
+        "count": 1,
+        "private_bytes": 3846144,
+        "working_set_bytes": 17293312
+      },
+      {
+        "name": "nvsphelper64",
+        "count": 1,
+        "private_bytes": 3809280,
+        "working_set_bytes": 16130048
+      },
+      {
+        "name": "adb",
+        "count": 1,
+        "private_bytes": 3555328,
+        "working_set_bytes": 13742080
+      },
+      {
+        "name": "UserOOBEBroker",
+        "count": 1,
+        "private_bytes": 2134016,
+        "working_set_bytes": 10768384
+      },
+      {
+        "name": "GeminiAppLauncher",
+        "count": 1,
+        "private_bytes": 2019328,
+        "working_set_bytes": 12001280
+      },
+      {
+        "name": "agent_ovpnconnect",
+        "count": 1,
+        "private_bytes": 1925120,
+        "working_set_bytes": 13189120
+      },
+      {
+        "name": "ovpnhelper_service",
+        "count": 1,
+        "private_bytes": 1748992,
+        "working_set_bytes": 12820480
+      },
+      {
+        "name": "GeminiCrashpadHandler",
+        "count": 1,
+        "private_bytes": 1716224,
+        "working_set_bytes": 8138752
+      },
+      {
+        "name": "DefenderSessionHelper",
+        "count": 1,
+        "private_bytes": 1187840,
+        "working_set_bytes": 5799936
+      },
+      {
+        "name": "",
+        "count": 182,
+        "private_bytes": 0,
+        "working_set_bytes": 0
+      }
+    ],
+    "top_processes": [
+      {
+        "pid": 50288,
+        "name": "python",
+        "private_bytes": 6167162880,
+        "working_set_bytes": 2105970688,
+        "handles": 1313,
+        "threads": 63,
+        "started_utc": "2026-10-22T16:42:20.6374624Z",
+        "path": "C:\\Users\\vlado\\AppData\\Local\\Programs\\Python\\Python311\\python.exe"
+      },
+      {
+        "pid": 61380,
+        "name": "codex",
+        "private_bytes": 3214397440,
+        "working_set_bytes": 2712276992,
+        "handles": 4152,
+        "threads": 507,
+        "started_utc": "2026-10-22T08:38:20.4251422Z",
+        "path": "C:\\Users\\vlado\\AppData\\Local\\OpenAI\\Codex\\bin\\a96ca4c1eee0cf35\\codex.exe"
+      },
+      {
+        "pid": 48680,
+        "name": "ChatGPT",
+        "private_bytes": 2430230528,
+        "working_set_bytes": 2189975552,
+        "handles": 787,
+        "threads": 40,
+        "started_utc": "2026-10-22T08:38:20.2092055Z",
+        "path": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1016.8120.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe"
+      },
+      {
+        "pid": 42972,
+        "name": "browser",
+        "private_bytes": 847405056,
+        "working_set_bytes": 626757632,
+        "handles": 1063,
+        "threads": 57,
+        "started_utc": "2026-10-22T06:03:05.6212138Z",
+        "path": "C:\\Program Files\\Yandex\\YandexBrowser\\Application\\browser.exe"
+      },
+      {
+        "pid": 45332,
+        "name": "browser",
+        "private_bytes": 824713216,
+        "working_set_bytes": 423202816,
+        "handles": 1383,
+        "threads": 68,
+        "started_utc": "2026-10-22T06:02:54.6664543Z",
+        "path": "C:\\Program Files\\Yandex\\YandexBrowser\\Application\\browser.exe"
+      },
+      {
+        "pid": 58004,
+        "name": "ChatGPT",
+        "private_bytes": 790884352,
+        "working_set_bytes": 341426176,
+        "handles": 1150,
+        "threads": 69,
+        "started_utc": "2026-10-22T08:38:14.9715027Z",
+        "path": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1016.8120.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe"
+      },
+      {
+        "pid": 15248,
+        "name": "Telegram",
+        "private_bytes": 772014080,
+        "working_set_bytes": 363741184,
+        "handles": 1635,
+        "threads": 155,
+        "started_utc": "2026-10-22T05:54:01.7189935Z",
+        "path": "C:\\Users\\vlado\\AppData\\Roaming\\Telegram Desktop\\Telegram.exe"
+      },
+      {
+        "pid": 33684,
+        "name": "chrome",
+        "private_bytes": 598720512,
+        "working_set_bytes": 585330688,
+        "handles": 822,
+        "threads": 47,
+        "started_utc": "2026-10-22T05:50:12.5251234Z",
+        "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "pid": 61348,
+        "name": "language_server",
+        "private_bytes": 570429440,
+        "working_set_bytes": 561807360,
+        "handles": 836,
+        "threads": 58,
+        "started_utc": "2026-10-22T15:26:05.4211616Z",
+        "path": "C:\\Users\\vlado\\AppData\\Local\\Programs\\antigravity\\resources\\bin\\language_server.exe"
+      },
+      {
+        "pid": 52336,
+        "name": "browser",
+        "private_bytes": 553172992,
+        "working_set_bytes": 494329856,
+        "handles": 715,
+        "threads": 35,
+        "started_utc": "2026-10-22T07:48:35.4005271Z",
+        "path": "C:\\Program Files\\Yandex\\YandexBrowser\\Application\\browser.exe"
+      },
+      {
+        "pid": 4908,
+        "name": "chrome",
+        "private_bytes": 549187584,
+        "working_set_bytes": 64991232,
+        "handles": 436,
+        "threads": 38,
+        "started_utc": "2026-10-22T06:31:23.0215780Z",
+        "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "pid": 13768,
+        "name": "explorer",
+        "private_bytes": 548450304,
+        "working_set_bytes": 382382080,
+        "handles": 7255,
+        "threads": 190,
+        "started_utc": "2026-10-22T05:48:54.5797093Z",
+        "path": "C:\\WINDOWS\\Explorer.EXE"
+      },
+      {
+        "pid": 50432,
+        "name": "browser",
+        "private_bytes": 542171136,
+        "working_set_bytes": 456556544,
+        "handles": 722,
+        "threads": 35,
+        "started_utc": "2026-10-22T12:42:47.3018862Z",
+        "path": "C:\\Program Files\\Yandex\\YandexBrowser\\Application\\browser.exe"
+      },
+      {
+        "pid": 63580,
+        "name": "ChatGPT",
+        "private_bytes": 528461824,
+        "working_set_bytes": 554774528,
+        "handles": 3308,
+        "threads": 60,
+        "started_utc": "2026-10-22T08:38:14.2647400Z",
+        "path": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1016.8120.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe"
+      },
+      {
+        "pid": 18444,
+        "name": "Everything",
+        "private_bytes": 520429568,
+        "working_set_bytes": 531972096,
+        "handles": 331,
+        "threads": 14,
+        "started_utc": "2026-10-22T05:49:26.5711986Z",
+        "path": "C:\\Program Files\\Everything\\Everything.exe"
+      },
+      {
+        "pid": 25184,
+        "name": "chrome",
+        "private_bytes": 503611392,
+        "working_set_bytes": 160620544,
+        "handles": 822,
+        "threads": 55,
+        "started_utc": "2026-10-22T05:50:12.4304677Z",
+        "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "pid": 41340,
+        "name": "browser",
+        "private_bytes": 453603328,
+        "working_set_bytes": 579588096,
+        "handles": 3316,
+        "threads": 67,
+        "started_utc": "2026-10-22T06:02:54.2927116Z",
+        "path": "C:\\Program Files\\Yandex\\YandexBrowser\\Application\\browser.exe"
+      },
+      {
+        "pid": 64296,
+        "name": "ChatGPT",
+        "private_bytes": 415756288,
+        "working_set_bytes": 499040256,
+        "handles": 456,
+        "threads": 32,
+        "started_utc": "2026-10-22T09:11:16.9964215Z",
+        "path": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1016.8120.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe"
+      },
+      {
+        "pid": 28660,
+        "name": "msedge",
+        "private_bytes": 405311488,
+        "working_set_bytes": 204382208,
+        "handles": 1032,
+        "threads": 66,
+        "started_utc": "2026-10-22T07:40:44.7966825Z",
+        "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
+      },
+      {
+        "pid": 41092,
+        "name": "msedgewebview2",
+        "private_bytes": 376958976,
+        "working_set_bytes": 278511616,
+        "handles": 466,
+        "threads": 38,
+        "started_utc": "2026-10-22T06:43:01.0504931Z",
+        "path": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.62\\msedgewebview2.exe"
+      },
+      {
+        "pid": 28728,
+        "name": "msedge",
+        "private_bytes": 370417664,
+        "working_set_bytes": 424022016,
+        "handles": 481,
+        "threads": 38,
+        "started_utc": "2026-10-22T05:50:17.2634296Z",
+        "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
+      },
+      {
+        "pid": 24936,
+        "name": "ChatGPT",
+        "private_bytes": 362147840,
+        "working_set_bytes": 300998656,
+        "handles": 393,
+        "threads": 32,
+        "started_utc": "2026-10-22T08:38:35.3874678Z",
+        "path": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1016.8120.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe"
+      },
+      {
+        "pid": 40720,
+        "name": "Antigravity",
+        "private_bytes": 362000384,
+        "working_set_bytes": 423821312,
+        "handles": 498,
+        "threads": 35,
+        "started_utc": "2026-10-22T15:26:06.3893612Z",
+        "path": "C:\\Users\\vlado\\AppData\\Local\\Programs\\antigravity\\Antigravity.exe"
+      },
+      {
+        "pid": 61520,
+        "name": "msedgewebview2",
+        "private_bytes": 338980864,
+        "working_set_bytes": 280023040,
+        "handles": 474,
+        "threads": 38,
+        "started_utc": "2026-10-22T07:14:20.5930391Z",
+        "path": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.62\\msedgewebview2.exe"
+      },
+      {
+        "pid": 60280,
+        "name": "ChatGPT",
+        "private_bytes": 317292544,
+        "working_set_bytes": 273633280,
+        "handles": 410,
+        "threads": 34,
+        "started_utc": "2026-10-22T08:38:51.6136456Z",
+        "path": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1016.8120.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe"
+      },
+      {
+        "pid": 61432,
+        "name": "node",
+        "private_bytes": 276480000,
+        "working_set_bytes": 207298560,
+        "handles": 205,
+        "threads": 15,
+        "started_utc": "2026-10-22T09:13:54.3568344Z",
+        "path": "C:\\Users\\vlado\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\b2c4f0c90eadfac4\\bin\\node.exe"
+      },
+      {
+        "pid": 54920,
+        "name": "browser",
+        "private_bytes": 274604032,
+        "working_set_bytes": 19582976,
+        "handles": 796,
+        "threads": 37,
+        "started_utc": "2026-10-22T13:01:31.5264268Z",
+        "path": "C:\\Program Files\\Yandex\\YandexBrowser\\Application\\browser.exe"
+      },
+      {
+        "pid": 51180,
+        "name": "browser",
+        "private_bytes": 272642048,
+        "working_set_bytes": 234147840,
+        "handles": 1145,
+        "threads": 38,
+        "started_utc": "2026-10-22T06:03:59.8126965Z",
+        "path": "C:\\Program Files\\Yandex\\YandexBrowser\\Application\\browser.exe"
+      },
+      {
+        "pid": 30992,
+        "name": "YandexTelemost",
+        "private_bytes": 262172672,
+        "working_set_bytes": 171225088,
+        "handles": 2653,
+        "threads": 131,
+        "started_utc": "2026-10-22T05:49:49.3391202Z",
+        "path": "C:\\Program Files\\Yandex\\YandexTelemost\\YandexTelemost.exe"
+      },
+      {
+        "pid": 2196,
+        "name": "Яндекс Музыка",
+        "private_bytes": 260743168,
+        "working_set_bytes": 325898240,
+        "handles": 791,
+        "threads": 43,
+        "started_utc": "2026-10-22T07:41:24.9275866Z",
+        "path": "C:\\Users\\vlado\\AppData\\Local\\Programs\\YandexMusic\\Яндекс Музыка.exe"
+      }
+    ],
+    "memory": {
+      "AvailableBytes": 53954879488,
+      "CommittedBytes": 66233475072,
+      "CommitLimit": 109233696768,
+      "PoolPagedBytes": 8398098432,
+      "PoolNonpagedBytes": 4459253760,
+      "PageTableBytes": null,
+      "CacheBytes": 3497283584,
+      "ModifiedPageListBytes": 211877888,
+      "StandbyCacheCoreBytes": 57147392,
+      "StandbyCacheNormalPriorityBytes": 52246675456,
+      "StandbyCacheReserveBytes": 380973056,
+      "PagesInputPersec": 0,
+      "PagesOutputPersec": 0
+    },
+    "pagefiles": [
+      {
+        "Name": "C:\\pagefile.sys",
+        "AllocatedBaseSize": 6144,
+        "CurrentUsage": 225,
+        "PeakUsage": 264
+      }
+    ],
+    "runtime_processes": [
+      {
+        "pid": 12068,
+        "parent_pid": 1628,
+        "name": "wslservice.exe",
+        "executable": null,
+        "created": "2026-10-22T08:48:53.034075+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": []
+      },
+      {
+        "pid": 12564,
+        "parent_pid": 2464,
+        "name": "pythonw.exe",
+        "executable": "C:\\Codex\\System\\runtimes\\toolhub-python-3.14.7\\pythonw.exe",
+        "created": "2026-10-22T08:48:54.463706+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "local_html_preview.py"
+        ]
+      },
+      {
+        "pid": 12764,
+        "parent_pid": 2464,
+        "name": "pythonw.exe",
+        "executable": "C:\\Codex\\System\\runtimes\\toolhub-python-3.14.7\\pythonw.exe",
+        "created": "2026-10-22T08:48:54.472267+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "hidden_process_runner.py"
+        ]
+      },
+      {
+        "pid": 13348,
+        "parent_pid": 2464,
+        "name": "pythonw.exe",
+        "executable": "C:\\Users\\vlado\\AppData\\Local\\Programs\\Python\\Python314\\pythonw.exe",
+        "created": "2026-10-22T08:48:54.492816+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "hidden_process_runner.py"
+        ]
+      },
+      {
+        "pid": 13392,
+        "parent_pid": 2464,
+        "name": "pythonw.exe",
+        "executable": "C:\\Users\\vlado\\AppData\\Local\\Programs\\Python\\Python314\\pythonw.exe",
+        "created": "2026-10-22T08:48:54.497593+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "hidden_process_runner.py"
+        ]
+      },
+      {
+        "pid": 20376,
+        "parent_pid": 6984,
+        "name": "python.exe",
+        "executable": "C:\\Users\\vlado\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Roaming\\uv\\python\\cpython-3.12.13-windows-x86_64-none\\python.exe",
+        "created": "2026-10-22T08:49:11.508521+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "shared_asr_broker.py"
+        ]
+      },
+      {
+        "pid": 31468,
+        "parent_pid": 25680,
+        "name": "pythonw.exe",
+        "executable": "C:\\Codex\\System\\runtimes\\toolhub-python-3.14.7\\pythonw.exe",
+        "created": "2026-10-22T08:50:13.862856+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "hidden_process_runner.py"
+        ]
+      },
+      {
+        "pid": 17984,
+        "parent_pid": 61380,
+        "name": "python.exe",
+        "executable": "C:\\Users\\vlado\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "created": "2026-10-22T11:38:59.414633+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "codex_social_mcp.py"
+        ]
+      },
+      {
+        "pid": 29548,
+        "parent_pid": 61380,
+        "name": "python.exe",
+        "executable": "C:\\Users\\vlado\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "created": "2026-10-22T11:39:03.190285+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "codex_social_mcp.py"
+        ]
+      },
+      {
+        "pid": 27220,
+        "parent_pid": 61380,
+        "name": "python.exe",
+        "executable": "C:\\Users\\vlado\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "created": "2026-10-22T11:39:10.429911+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "codex_social_mcp.py"
+        ]
+      },
+      {
+        "pid": 63456,
+        "parent_pid": 61380,
+        "name": "python.exe",
+        "executable": "C:\\Users\\vlado\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "created": "2026-10-22T11:39:17.477529+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "codex_social_mcp.py"
+        ]
+      },
+      {
+        "pid": 26452,
+        "parent_pid": 61380,
+        "name": "python.exe",
+        "executable": "C:\\Users\\vlado\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "created": "2026-10-22T11:39:22.874425+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "codex_social_mcp.py"
+        ]
+      },
+      {
+        "pid": 37404,
+        "parent_pid": 61380,
+        "name": "python.exe",
+        "executable": "C:\\Users\\vlado\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "created": "2026-10-22T11:50:56.805328+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "codex_social_mcp.py"
+        ]
+      },
+      {
+        "pid": 26864,
+        "parent_pid": 61380,
+        "name": "python.exe",
+        "executable": "C:\\Users\\vlado\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "created": "2026-10-22T11:52:47.274049+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "codex_social_mcp.py"
+        ]
+      },
+      {
+        "pid": 31948,
+        "parent_pid": 61380,
+        "name": "python.exe",
+        "executable": "C:\\Users\\vlado\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "created": "2026-10-22T14:51:18.56103+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "codex_social_mcp.py"
+        ]
+      },
+      {
+        "pid": 59116,
+        "parent_pid": 61380,
+        "name": "python.exe",
+        "executable": "C:\\Users\\vlado\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "created": "2026-10-22T17:29:27.964733+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "codex_social_mcp.py"
+        ]
+      },
+      {
+        "pid": 21624,
+        "parent_pid": 61380,
+        "name": "python.exe",
+        "executable": "C:\\Users\\vlado\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "created": "2026-10-22T17:35:57.953838+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "codex_social_mcp.py"
+        ]
+      },
+      {
+        "pid": 50872,
+        "parent_pid": 61380,
+        "name": "python.exe",
+        "executable": "C:\\Users\\vlado\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "created": "2026-10-22T17:38:49.188941+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "codex_social_mcp.py"
+        ]
+      },
+      {
+        "pid": 25332,
+        "parent_pid": 61348,
+        "name": "python.exe",
+        "executable": "C:\\Codex\\System\\runtimes\\toolhub-python-3.14.7\\python.exe",
+        "created": "2026-10-22T18:26:06.344427+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "codex_social_mcp.py"
+        ]
+      },
+      {
+        "pid": 21048,
+        "parent_pid": 61348,
+        "name": "python.exe",
+        "executable": "C:\\Users\\vlado\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "created": "2026-10-22T18:26:06.345077+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "gmail_mcp.py"
+        ]
+      },
+      {
+        "pid": 48904,
+        "parent_pid": 41764,
+        "name": "python.exe",
+        "executable": "C:\\Users\\vlado\\Documents\\Codex\\2026-05-31\\api\\outputs\\vk-ui-bridge\\.venv\\Scripts\\python.exe",
+        "created": "2026-10-22T18:42:28.354702+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": []
+      },
+      {
+        "pid": 3784,
+        "parent_pid": 48904,
+        "name": "python.exe",
+        "executable": "C:\\Users\\vlado\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "created": "2026-10-22T18:42:28.367879+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": []
+      },
+      {
+        "pid": 7828,
+        "parent_pid": 61380,
+        "name": "python.exe",
+        "executable": "C:\\Users\\vlado\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "created": "2026-10-22T18:45:11.917207+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "codex_social_mcp.py"
+        ]
+      },
+      {
+        "pid": 49768,
+        "parent_pid": 61380,
+        "name": "python.exe",
+        "executable": "C:\\Users\\vlado\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "created": "2026-10-22T19:09:22.93653+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "codex_social_mcp.py"
+        ]
+      },
+      {
+        "pid": 27020,
+        "parent_pid": 61380,
+        "name": "python.exe",
+        "executable": "C:\\Users\\vlado\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "created": "2026-10-22T19:17:02.07256+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "codex_social_mcp.py"
+        ]
+      },
+      {
+        "pid": 21916,
+        "parent_pid": 61380,
+        "name": "python.exe",
+        "executable": "C:\\Users\\vlado\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "created": "2026-10-22T19:33:45.241189+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "codex_social_mcp.py"
+        ]
+      },
+      {
+        "pid": 69068,
+        "parent_pid": 61380,
+        "name": "python.exe",
+        "executable": "C:\\Users\\vlado\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "created": "2026-10-22T19:34:20.633324+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "codex_social_mcp.py"
+        ]
+      },
+      {
+        "pid": 23096,
+        "parent_pid": 61380,
+        "name": "python.exe",
+        "executable": "C:\\Users\\vlado\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "created": "2026-10-22T19:36:59.133512+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "codex_social_mcp.py"
+        ]
+      },
+      {
+        "pid": 11312,
+        "parent_pid": 15608,
+        "name": "python.exe",
+        "executable": "C:\\Codex\\System\\Integrations\\VoiceClone\\.venv\\Scripts\\python.exe",
+        "created": "2026-10-22T19:42:20.624121+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "voice_daemon.py"
+        ]
+      },
+      {
+        "pid": 50288,
+        "parent_pid": 11312,
+        "name": "python.exe",
+        "executable": "C:\\Users\\vlado\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "created": "2026-10-22T19:42:20.637462+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "voice_daemon.py"
+        ]
+      },
+      {
+        "pid": 5504,
+        "parent_pid": 61380,
+        "name": "python.exe",
+        "executable": "C:\\Users\\vlado\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "created": "2026-10-22T19:43:49.868625+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "codex_social_mcp.py"
+        ]
+      },
+      {
+        "pid": 68564,
+        "parent_pid": 61380,
+        "name": "python.exe",
+        "executable": "C:\\Users\\vlado\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "created": "2026-10-22T19:45:28.907886+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "codex_social_mcp.py"
+        ]
+      },
+      {
+        "pid": 58072,
+        "parent_pid": 61380,
+        "name": "python.exe",
+        "executable": "C:\\Users\\vlado\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "created": "2026-10-22T19:47:32.849313+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "codex_social_mcp.py"
+        ]
+      },
+      {
+        "pid": 41580,
+        "parent_pid": 61380,
+        "name": "python.exe",
+        "executable": "C:\\Users\\vlado\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "created": "2026-10-22T19:48:17.237433+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "codex_social_mcp.py"
+        ]
+      },
+      {
+        "pid": 25644,
+        "parent_pid": 61380,
+        "name": "python.exe",
+        "executable": "C:\\Users\\vlado\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "created": "2026-10-22T19:49:12.331115+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "codex_social_mcp.py"
+        ]
+      },
+      {
+        "pid": 70516,
+        "parent_pid": 61380,
+        "name": "python.exe",
+        "executable": "C:\\Users\\vlado\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "created": "2026-10-22T19:49:14.265743+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "codex_social_mcp.py"
+        ]
+      },
+      {
+        "pid": 62760,
+        "parent_pid": 61380,
+        "name": "python.exe",
+        "executable": "C:\\Users\\vlado\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "created": "2026-10-22T19:51:48.802749+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "codex_social_mcp.py"
+        ]
+      },
+      {
+        "pid": 2040,
+        "parent_pid": 61380,
+        "name": "python.exe",
+        "executable": "C:\\Users\\vlado\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "created": "2026-10-22T19:53:09.659245+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "codex_social_mcp.py"
+        ]
+      },
+      {
+        "pid": 60236,
+        "parent_pid": 61380,
+        "name": "python.exe",
+        "executable": "C:\\Users\\vlado\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "created": "2026-10-22T19:57:28.297677+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "codex_social_mcp.py"
+        ]
+      },
+      {
+        "pid": 61960,
+        "parent_pid": 61380,
+        "name": "python.exe",
+        "executable": "C:\\Users\\vlado\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "created": "2026-10-22T19:58:16.597918+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "codex_social_mcp.py"
+        ]
+      },
+      {
+        "pid": 22916,
+        "parent_pid": 61380,
+        "name": "python.exe",
+        "executable": "C:\\Users\\vlado\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "created": "2026-10-22T20:00:06.604417+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "codex_social_mcp.py"
+        ]
+      },
+      {
+        "pid": 8404,
+        "parent_pid": 61380,
+        "name": "python.exe",
+        "executable": "C:\\Users\\vlado\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "created": "2026-10-22T20:02:20.174461+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "codex_social_mcp.py"
+        ]
+      },
+      {
+        "pid": 59276,
+        "parent_pid": 2464,
+        "name": "pythonw.exe",
+        "executable": "C:\\Users\\vlado\\AppData\\Local\\Programs\\Python\\Python314\\pythonw.exe",
+        "created": "2026-10-22T20:02:54.75812+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "hidden_process_runner.py"
+        ]
+      },
+      {
+        "pid": 41116,
+        "parent_pid": 63940,
+        "name": "pythonw.exe",
+        "executable": "C:\\Users\\vlado\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\pythonw.exe",
+        "created": "2026-10-22T20:02:55.32891+03:00",
+        "candidate_scope": false,
+        "current_experiment_scope": false,
+        "source_stand_scope": false,
+        "script_basenames": [
+          "codex_local_monitor_readonly.py"
+        ]
+      }
+    ],
+    "mutations": 0
+  },
+  "final_status": {
+    "listener": [
+      {
+        "LocalAddress": "127.0.0.1",
+        "LocalPort": 9239,
+        "OwningProcess": 50288
+      }
+    ],
+    "voice_status": {
+      "device": "cuda",
+      "model_loaded": true,
+      "port": 9239,
+      "status": "online"
+    },
+    "changes": 0
+  },
+  "final_memory": {
+    "at_utc": "2026-10-22T17:04:25.625744+00:00",
+    "available_physical": 55937409024,
+    "process_available_commit": 42408833024,
+    "system_available_commit": 42408833024,
+    "system_commit_total": 66824863744,
+    "system_commit_limit": 109233696768,
+    "system_commit_peak": 71145738240,
+    "system_physical_total": 102791245824,
+    "performance_physical_available": 55937409024,
+    "job": {
+      "inside_job": true,
+      "limit_flags": 10240,
+      "process_memory_limited": false,
+      "job_memory_limited": false,
+      "process_memory_limit": 0,
+      "job_memory_limit": 0,
+      "peak_job_memory_used": 73306112
+    },
+    "new_VM_launches": 0,
+    "new_connections": 0
+  },
+  "scope": "read_only_commit_consumer_diagnosis",
+  "caveats": [
+    "Process private-byte sums exclude shared commit, kernel and inaccessible processes; sampling is not atomic.",
+    "Large kernel pools do not by themselves establish a leak or identify a driver.",
+    "Shared processes are not proven abandoned and must not be killed."
+  ],
+  "conclusion": {
+    "candidate_experiment_orphan_found": false,
+    "voice_daemon_pid": 50288,
+    "voice_daemon_private_gib": 5.743618011474609,
+    "voice_model_loaded": true,
+    "voice_supported_unload_route_found": false,
+    "current_commit_available_gib": 39.49630355834961,
+    "required_commit_gib": 44,
+    "shortfall_gib": 4.503696441650391,
+    "safe_reclaim_within_current_no_close_scope_confirmed": false,
+    "changes_to_processes_or_system": 0,
+    "new_connections": 0
+  }
+}

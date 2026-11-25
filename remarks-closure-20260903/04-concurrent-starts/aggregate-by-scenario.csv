@@ -1,0 +1,5 @@
+scenario,simultaneous_starts,rows,successes,success_rate,mean_loss_pct,max_loss_pct,rtt_mean_ms,rtt_median_ms,rtt_p95_ms,rtt_max_ms,setup_median_s,setup_p95_s,setup_max_s,esp_packets_total,esp_packets_mean,direct_final_ab_ike_packets_total
+bidir12,2,2,2,1.0,0.0,0.0,2.638,2.638,2.9386,2.972,0.0825,0.11265,0.116,32,16.0,0
+disjoint5,5,5,5,1.0,0.0,0.0,3.2886,2.066,7.0646,8.307,0.069,0.0746,0.075,40,8.0,0
+ring10,10,10,10,1.0,0.0,0.0,3.2322,3.156,3.86995,3.919,0.353,189.4161,189.426,80,8.0,0
+reverse5,10,10,10,1.0,0.0,0.0,3.0088,3.0375,3.90585,4.152,0.214,11.30325,11.31,160,16.0,0

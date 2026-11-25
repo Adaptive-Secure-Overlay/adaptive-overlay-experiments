@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0",
+  "command_id": "candidate-close-testing-20260830-01",
+  "directive_id": "dir_29dd7f867e2a19c5d35e5531",
+  "closed_at": "2026-08-30T16:30:22.1587248+03:00",
+  "mode": "safe_closure",
+  "actions": {
+    "new_test_runs_started": false,
+    "runners_restarted": false,
+    "network_actions_performed": false,
+    "eve_ng_changed": false,
+    "keenetic_or_external_infrastructure_touched": false,
+    "legacy_baseline_changed": false,
+    "wireguard_checkpoint_changed": false
+  },
+  "current_local_checks": {
+    "matching_runner_processes": 0,
+    "historical_runner_pid": 26948,
+    "historical_runner_pid_active": false,
+    "scope": "local Windows processes only"
+  },
+  "last_safe_wireguard_checkpoint": {
+    "path": "C:\\Codex\\Candidate\\Testing-EVE-NG\\wireguard-eve\\runs\\20260825-112140\\checkpoint.json",
+    "sha256": "3C54C79B1154ACCDAEB0881BBEEC89EF750837DF7AF522963E9A152C915C82C0",
+    "updated_at": "2026-08-25T08:25:40.289447Z",
+    "state": "blocked",
+    "completed_cases": 0,
+    "total_cases": 27,
+    "preflight_enforced": true,
+    "blocker_count": 40,
+    "open_constraints": [
+      "Product capture/inject backend artifact and version are absent.",
+      "Required product endpoint and node configuration paths are absent or invalid.",
+      "Daemon binding, namespace/interface scope proof, and rollback evidence are absent.",
+      "Live EVE VM, SSH, /dev/kvm, selected-node, remote-runner, and remote-disk readiness are unconfirmed.",
+      "Direct WireGuard baseline, overlay smoke, and canonical EVE-NG matrix have not run."
+    ]
+  },
+  "wireguard_outcome": {
+    "eve_ng_cases": "0/27",
+    "direct_baseline": "not_run",
+    "overlay_smoke": "not_run",
+    "kernel_wireguard_capture_inject": "unconfirmed",
+    "nftables": "unconfirmed",
+    "historical_local_package_validation": "14/14",
+    "historical_in_memory_matrix": "27/27",
+    "historical_harness_validation": "6/6"
+  },
+  "legacy_outcome": {
+    "status": "completed",
+    "success": true,
+    "accepted": 1200,
+    "expected": 1200,
+    "error": "",
+    "stdout_path": "C:\\Codex\\Candidate\\Testing-EVE-NG\\LegacyWorkspace\\reports\\cascade_data_plane_multivantage_matrix_resume_background_20260821-120505.stdout.log",
+    "stdout_sha256": "E5A5AD94023079306233EA753369B4E77B7D5F9609A51F150DF95DA166995508",
+    "stderr_path": "C:\\Codex\\Candidate\\Testing-EVE-NG\\LegacyWorkspace\\reports\\cascade_data_plane_multivantage_matrix_resume_background_20260821-120505.stderr.log",
+    "stderr_bytes": 0,
+    "stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "scope_note": "This is the preserved legacy baseline, not WireGuard EVE-NG progress."
+  },
+  "confirmed": [
+    "No matching local legacy or WireGuard runner process was found at closure time.",
+    "Historical runner PID 26948 was inactive at closure time.",
+    "The preserved WireGuard checkpoint remains blocked at 0/27.",
+    "The preserved legacy stdout records completed=true-equivalent status, success=true, accepted=1200/1200, and empty error.",
+    "The preserved legacy stderr is empty.",
+    "No runner, network, EVE-NG, Keenetic, external infrastructure, legacy baseline, or WireGuard checkpoint mutation was performed during closure."
+  ],
+  "unconfirmed": [
+    "Current EVE-NG VM power and host state",
+    "Current SSH reachability",
+    "Current /dev/kvm availability",
+    "Current selected-node state",
+    "Current remote runner and remote disk state",
+    "Kernel WireGuard, capture/inject, nftables, direct baseline, overlay smoke, and the EVE-NG 27-case matrix"
+  ],
+  "evidence": {
+    "wireguard_preflight": {
+      "path": "C:\\Codex\\Candidate\\Testing-EVE-NG\\wireguard-eve\\runs\\20260825-112140\\preflight.json",
+      "sha256": "4A70F8471DB8042324881A7224ECCFDEFC052EBE19F3544916B467602782DE0C"
+    },
+    "prior_wireguard_report": {
+      "path": "C:\\Codex\\Candidate\\Testing-EVE-NG\\wireguard-eve\\runs\\20260825-112140\\FINAL-REPORT.md",
+      "sha256": "2E48FC9E1BF6D9F48BC61F89F5908141E17ADED76185307B9482072428766BDF"
+    }
+  }
+}

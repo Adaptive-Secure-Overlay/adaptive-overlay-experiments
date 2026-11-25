@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0",
+  "root": "C:\\Codex\\Candidate\\Testing-EVE-NG\\remarks-closure-20260903",
+  "network_actions": false,
+  "eve_ng_live_run": false,
+  "legacy_workspace_modified": false,
+  "python": "3.12.13",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "elapsed_seconds": 1.156,
+  "experiment_statuses": [
+    "completed_computational_calibration",
+    "completed_offline_eve_reanalysis",
+    "blocked_product_gap",
+    "completed_offline_eve_reanalysis"
+  ],
+  "generated_files": [
+    {
+      "path": "C:\\Codex\\Candidate\\Testing-EVE-NG\\remarks-closure-20260903\\01-threshold-calibration\\aggregate.csv",
+      "relative_path": "01-threshold-calibration\\aggregate.csv",
+      "bytes": 838,
+      "sha256": "132D2840A381BD1929D27215B315A274E5C6D7100FD147C8216B8B13F5540609"
+    },
+    {
+      "path": "C:\\Codex\\Candidate\\Testing-EVE-NG\\remarks-closure-20260903\\01-threshold-calibration\\PASSPORT.md",
+      "relative_path": "01-threshold-calibration\\PASSPORT.md",
+      "bytes": 1619,
+      "sha256": "5551442C69FE95EAF096676DCCBB1519F9361576719F137E638D94B7082230DA"
+    },
+    {
+      "path": "C:\\Codex\\Candidate\\Testing-EVE-NG\\remarks-closure-20260903\\01-threshold-calibration\\raw-counts.csv",
+      "relative_path": "01-threshold-calibration\\raw-counts.csv",
+      "bytes": 2065,
+      "sha256": "A5726990522DFC3D84AF07E22E7D6F3A7F94CF2C62CD9FC1A9E656312BBB2F79"
+    },
+    {
+      "path": "C:\\Codex\\Candidate\\Testing-EVE-NG\\remarks-closure-20260903\\01-threshold-calibration\\result.json",
+      "relative_path": "01-threshold-calibration\\result.json",
+      "bytes": 1912,
+      "sha256": "38DDE07C201D4480303A701B0355690A0C66E0C20D6741AB8E445BB06DFA63DF"
+    },
+    {
+      "path": "C:\\Codex\\Candidate\\Testing-EVE-NG\\remarks-closure-20260903\\02-cascade-length\\aggregate-by-hops.csv",
+      "relative_path": "02-cascade-length\\aggregate-by-hops.csv",
+      "bytes": 751,
+      "sha256": "66DDB0B5A00C91742D42C87088F2166C597A003EE25153E1845A4D93B93300B5"
+    },
+    {
+      "path": "C:\\Codex\\Candidate\\Testing-EVE-NG\\remarks-closure-20260903\\02-cascade-length\\PASSPORT.md",
+      "relative_path": "02-cascade-length\\PASSPORT.md",
+      "bytes": 2377,
+      "sha256": "81EDE069E2933AB5191C2D502BD41EF507154F33B95DDD1A0E60050C8EF2096B"
+    },
+    {
+      "path": "C:\\Codex\\Candidate\\Testing-EVE-NG\\remarks-closure-20260903\\02-cascade-length\\raw-trials.csv",
+      "relative_path": "02-cascade-length\\raw-trials.csv",
+      "bytes": 714295,
+      "sha256": "22F8B4C23820AF8C588BC90F175980C3043517F422E5698C2DA7B35C4D2AAA81"
+    },
+    {
+      "path": "C:\\Codex\\Candidate\\Testing-EVE-NG\\remarks-closure-20260903\\02-cascade-length\\result.json",
+      "relative_path": "02-cascade-length\\result.json",
+      "bytes": 4104,
+      "sha256": "B423D85CB9724EF8294B12A1871DA41249416F1AD84EB8D39C2292D41266C6D0"
+    },
+    {
+      "path": "C:\\Codex\\Candidate\\Testing-EVE-NG\\remarks-closure-20260903\\03-trust-registry-negative\\PASSPORT.md",
+      "relative_path": "03-trust-registry-negative\\PASSPORT.md",
+      "bytes": 2104,
+      "sha256": "C2446711CC9CFE15AB44C6FB82D3BF2D275F8ADA0C0159482CBBEF4C13BE9CC6"
+    },
+    {
+      "path": "C:\\Codex\\Candidate\\Testing-EVE-NG\\remarks-closure-20260903\\03-trust-registry-negative\\raw-negative-cases.csv",
+      "relative_path": "03-trust-registry-negative\\raw-negative-cases.csv",
+      "bytes": 518,
+      "sha256": "D8F1C1F5B21A242764E20B9970C2AAD8B5E6B2081879131D4038008B3455149A"
+    },
+    {
+      "path": "C:\\Codex\\Candidate\\Testing-EVE-NG\\remarks-closure-20260903\\03-trust-registry-negative\\result.json",
+      "relative_path": "03-trust-registry-negative\\result.json",
+      "bytes": 1997,
+      "sha256": "52EBAACA648BED7B62B1A5B9C547D69C3C7A388753F38B22459BC51A0A8607AC"
+    },
+    {
+      "path": "C:\\Codex\\Candidate\\Testing-EVE-NG\\remarks-closure-20260903\\04-concurrent-starts\\aggregate-by-scenario.csv",
+      "relative_path": "04-concurrent-starts\\aggregate-by-scenario.csv",
+      "bytes": 586,
+      "sha256": "44E2A3D699DB7CBB74842A57FA60E3AB98F5E34D054137FF32712EF696B74E82"
+    },
+    {
+      "path": "C:\\Codex\\Candidate\\Testing-EVE-NG\\remarks-closure-20260903\\04-concurrent-starts\\PASSPORT.md",
+      "relative_path": "04-concurrent-starts\\PASSPORT.md",
+      "bytes": 1772,
+      "sha256": "22C98358E6788738159C0E0338A5EF39D4042E54B4B6715A96BA85071B629CB1"
+    },
+    {
+      "path": "C:\\Codex\\Candidate\\Testing-EVE-NG\\remarks-closure-20260903\\04-concurrent-starts\\raw-normalized.csv",
+      "relative_path": "04-concurrent-starts\\raw-normalized.csv",
+      "bytes": 4210,
+      "sha256": "0F105B496278EAA8D490F3F83B27BF4A35228CFA605E80BA9AA2EE1A9151F041"
+    },
+    {
+      "path": "C:\\Codex\\Candidate\\Testing-EVE-NG\\remarks-closure-20260903\\04-concurrent-starts\\result.json",
+      "relative_path": "04-concurrent-starts\\result.json",
+      "bytes": 3987,
+      "sha256": "11F983CEBE63AA1D65F464DBF4B726136711AB7796DC3536E948B9662176BD46"
+    },
+    {
+      "path": "C:\\Codex\\Candidate\\Testing-EVE-NG\\remarks-closure-20260903\\FINAL-REPORT.md",
+      "relative_path": "FINAL-REPORT.md",
+      "bytes": 2262,
+      "sha256": "9F682713334793D01A368F50C660E27C62CAD4B614302DD9D2F7B3D5683D331E"
+    },
+    {
+      "path": "C:\\Codex\\Candidate\\Testing-EVE-NG\\remarks-closure-20260903\\PLAN.md",
+      "relative_path": "PLAN.md",
+      "bytes": 981,
+      "sha256": "E0BE613D32ADA8F823131B19E592791626BB1E0CE79399408F97F2C08C304607"
+    },
+    {
+      "path": "C:\\Codex\\Candidate\\Testing-EVE-NG\\remarks-closure-20260903\\run_experiments.py",
+      "relative_path": "run_experiments.py",
+      "bytes": 41085,
+      "sha256": "F0DB4D506E82947297616190055E982DDC0364177FDF6BBC2A4CB48CF35015AB"
+    },
+    {
+      "path": "C:\\Codex\\Candidate\\Testing-EVE-NG\\remarks-closure-20260903\\validate_results.py",
+      "relative_path": "validate_results.py",
+      "bytes": 7896,
+      "sha256": "A57C0C8259C1993AC929B3FBF9BB625B99CCBB28AEF2ED0BE644ED148DACE66A"
+    }
+  ]
+}

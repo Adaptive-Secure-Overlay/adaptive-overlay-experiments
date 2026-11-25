@@ -1,0 +1,4 @@
+hops,trials,successes,success_rate,mean_loss_pct,max_loss_pct,ping_transmitted_total,ping_received_total,ping_loss_packets,ping_loss_rate_pct,rtt_mean_ms,rtt_median_ms,rtt_p95_ms,rtt_max_ms,active_cells_mean,edge_handles_mean,source_packets_mean,source_packets_p95,source_bytes_mean,source_bytes_p95,capture_span_mean_ms,capture_span_p95_ms
+3,400,400,1.0,0.0,0.0,800,800,0,0.0,40.62553,38.6525,55.5171,85.578,3.0,4.0,39.8525,51.0,28265.4225,35276.0,1018.00052,1023.079896
+4,400,400,1.0,0.125,50.0,800,799,1,0.125,54.013005,48.21,67.2146,1655.894,4.0,5.0,41.765,51.0,29460.79,35285.0,1025.454921,1028.540539
+5,400,400,1.0,0.625,50.0,800,795,5,0.625,66.168742,59.9105,85.68605,1487.494,5.0,6.0,44.3075,64.0,31052.3625,43390.0,1032.218394,1038.11419

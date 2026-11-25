@@ -1,0 +1,23 @@
+{
+  "status": "blocked_product_gap",
+  "hypothesis": "A protected trust registry rejects missing, unknown, or substituted node identities before route construction.",
+  "parameters": {
+    "cases": 4,
+    "live_network": false,
+    "generated_keys": "ephemeral in memory; not persisted or reported"
+  },
+  "success_criterion": "Local guards reject malformed/missing identities and an authenticated registry rejects remote key substitution.",
+  "local_guard_cases_pass": true,
+  "protected_registry_case_pass": false,
+  "gap_detected": true,
+  "criterion_pass": false,
+  "source": "C:\\Codex\\Candidate\\Testing-EVE-NG\\LegacyWorkspace\\hybrid-overlay\\universal_cascade.py",
+  "source_sha256": "F77D9E524E9B781267988C7E06D12C97AF85C28DE6645336340618D35D809B45",
+  "config_source": "C:\\Codex\\Candidate\\Testing-EVE-NG\\LegacyWorkspace\\hybrid-overlay\\config.py",
+  "config_source_sha256": "3B88F9EF0C7179805FF6D332D03655D752524588522DA5EF5B0FABC4B9DA8B78",
+  "raw": "C:\\Codex\\Candidate\\Testing-EVE-NG\\remarks-closure-20260903\\03-trust-registry-negative\\raw-negative-cases.csv",
+  "aggregate": "C:\\Codex\\Candidate\\Testing-EVE-NG\\remarks-closure-20260903\\03-trust-registry-negative\\result.json",
+  "development_blocker": "The preserved implementation validates local key consistency and member completeness, but consumes a caller-supplied public-key directory without signed/owner-authenticated registry provenance or an anti-substitution trust anchor.",
+  "required_artifact": "Development must provide a versioned authenticated registry format, trust-anchor/provenance verification, atomic update/rollback rules, and executable negative tests that reject unauthorized add/replace operations before EVE-NG attack testing.",
+  "limited_conclusion": "Three local input guards reject malformed cases. Remote key substitution is accepted in the tested constructor path, so a successful protected-registry defense is not claimed and no live attack was attempted."
+}

@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "tests_run": 127,
+  "core_tests_passed": true,
+  "core_tests_run": 88,
+  "core_tests_skipped": 1,
+  "gil_regression_sha256": "04b808961df3db974da524b2bd5cea6a0cd9f7a69246d58667e8db8a29169b94",
+  "contract_sha256": "11ea77de5b0fc48b7b69114670b4c19f85ff6a516a0b3218b61f824ec8e8f8e9",
+  "scope": "offline only; actual policy, isolation, queues, IKE/ESP and captures require live run"
+}

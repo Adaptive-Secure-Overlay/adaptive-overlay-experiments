@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "stamp": "20260825-112140",
+  "checked_at": "2026-08-25T11:21:40+03:00",
+  "scope": "isolated-eve-ng-wireguard",
+  "local": {
+    "runner_matches": 0,
+    "historical_runner_pid": 26948,
+    "historical_runner_pid_active": false,
+    "disk_c_free_bytes": 1111690727424,
+    "legacy_checkpoint": {
+      "stamp": "20260821-115025",
+      "status": "completed",
+      "success": true,
+      "accepted": 1200,
+      "expected": 1200,
+      "error": "",
+      "stderr_empty": true,
+      "modified": false
+    }
+  },
+  "eve": {
+    "vmware_running_vms": 0,
+    "vm_running": false,
+    "ssh_host": "192.168.95.129",
+    "ssh_port": 22,
+    "ssh_reachable": false,
+    "ssh_error": "TCP connection timed out",
+    "dev_kvm": "not_checked_vm_off",
+    "remote_disk": "not_checked_vm_off",
+    "selected_nodes": "not_checked_vm_off",
+    "remote_runner": "not_checked_vm_off"
+  },
+  "development_package": {
+    "path": "C:\\Codex\\Candidate\\Development-WireGuard",
+    "validate_local_exit_code": 0,
+    "unit_tests": "14/14",
+    "model_matrix": "27/27",
+    "product_backend": "missing",
+    "real_endpoint_configs": "missing",
+    "eve_inventory": "missing",
+    "daemon_binding_evidence": "missing",
+    "rollback_evidence": "missing"
+  },
+  "safety": {
+    "physical_keenetic_touched": false,
+    "external_infrastructure_touched": false,
+    "legacy_run_touched": false,
+    "eve_vm_started": false,
+    "network_configuration_changed": false,
+    "redaction_confirmed": true
+  },
+  "decision": {
+    "state": "blocked",
+    "baseline_started": false,
+    "smoke_started": false,
+    "matrix_completed": 0,
+    "matrix_total": 27,
+    "stop_reason": "mandatory product backend, concrete EVE configuration, and verified rollback are absent"
+  }
+}

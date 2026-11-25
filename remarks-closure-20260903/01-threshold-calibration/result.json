@@ -1,0 +1,54 @@
+{
+  "status": "completed_computational_calibration",
+  "hypothesis": "Monte Carlo interception frequencies agree with the F4 analytical model around n50 for alpha=0.5.",
+  "requested_notation_note": "The source dissertation defines alpha=0.5 (0 < alpha < 1) and n50. No valid model parameter alpha=50 was found; alpha=50 was not fabricated.",
+  "parameters": {
+    "model": "F4 complete-graph walk with repeated nodes and no self-loop",
+    "alpha": 0.5,
+    "cases": [
+      {
+        "m": 1,
+        "j": 2
+      },
+      {
+        "m": 2,
+        "j": 2
+      },
+      {
+        "m": 1,
+        "j": 3
+      },
+      {
+        "m": 2,
+        "j": 3
+      },
+      {
+        "m": 1,
+        "j": 4
+      },
+      {
+        "m": 2,
+        "j": 4
+      },
+      {
+        "m": 3,
+        "j": 4
+      },
+      {
+        "m": 2,
+        "j": 5
+      }
+    ],
+    "boundary_points_per_case": 2,
+    "trials_per_point": 50000,
+    "total_simulated_routes": 800000,
+    "base_seed": 20260903
+  },
+  "success_criterion": "For every (m,j), exact P(intercept) is >0.5 at n50-1 and <=0.5 at n50; Monte Carlo absolute error <=0.01 at both points.",
+  "criterion_pass": true,
+  "source": "C:\\Codex\\Candidate\\Center\\Council-Integrated-Revision-2026-09-03\\ИТОГОВЫЙ_КОМПЛЕКТ\\Отчёт_было_замечание_стало.md",
+  "source_sha256": "7D8C680A3FB29E37054FB708D6E8E435C36E9BE698F0628780515DEF1E10F590",
+  "raw": "C:\\Codex\\Candidate\\Testing-EVE-NG\\remarks-closure-20260903\\01-threshold-calibration\\raw-counts.csv",
+  "aggregate": "C:\\Codex\\Candidate\\Testing-EVE-NG\\remarks-closure-20260903\\01-threshold-calibration\\aggregate.csv",
+  "limited_conclusion": "The 0.5 crossing is empirically reproduced inside the stated F4 route model. This does not calibrate an operational security limit and does not validate alpha=50."
+}

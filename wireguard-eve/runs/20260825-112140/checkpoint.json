@@ -1,0 +1,252 @@
+{
+  "backend_gate": {
+    "checked_at": "2026-08-25T08:25:40.289458Z",
+    "manifest_sha256": "f9c727bd56bb93f573a656b41f9b72e624905987b334760d872b220e3bddf3ac",
+    "preflight_enforced": true,
+    "ready": false
+  },
+  "blockers": [
+    "backend_artifact: real non-placeholder existing path required",
+    "backend_version: real non-placeholder version required",
+    "endpoint_configs.n1: real non-placeholder existing path required",
+    "endpoint_configs.n10: real non-placeholder existing path required",
+    "endpoint_configs.n2: real non-placeholder existing path required",
+    "endpoint_configs.n3: real non-placeholder existing path required",
+    "endpoint_configs.n4: real non-placeholder existing path required",
+    "endpoint_configs.n5: real non-placeholder existing path required",
+    "endpoint_configs.n6: real non-placeholder existing path required",
+    "endpoint_configs.n7: real non-placeholder existing path required",
+    "endpoint_configs.n8: real non-placeholder existing path required",
+    "endpoint_configs.n9: real non-placeholder existing path required",
+    "nodes[0]: invalid isolated logical mapping",
+    "nodes[1]: invalid isolated logical mapping",
+    "nodes[2]: invalid isolated logical mapping",
+    "nodes[3]: invalid isolated logical mapping",
+    "nodes[4]: invalid isolated logical mapping",
+    "nodes[5]: invalid isolated logical mapping",
+    "nodes[6]: invalid isolated logical mapping",
+    "nodes[7]: invalid isolated logical mapping",
+    "nodes[8]: invalid isolated logical mapping",
+    "nodes[9]: invalid isolated logical mapping",
+    "nodes[10]: invalid isolated logical mapping",
+    "nodes[11]: invalid isolated logical mapping",
+    "daemon_binding.evidence_path: real non-placeholder existing path required",
+    "scope.namespace: real non-placeholder value required",
+    "scope.interface: real non-placeholder value required",
+    "scope.proof_path: real non-placeholder existing path required",
+    "rollback.verification_evidence: real non-placeholder existing path required",
+    "rollback.scope_proof: real non-placeholder existing path required",
+    "rollback.original_state_snapshot: real non-placeholder existing path required",
+    "rollback.restore_procedure: real non-placeholder existing path required",
+    "rollback.verified_at: verified timestamp required",
+    "preflight.eve.vm_running: True required",
+    "preflight.eve.ssh_reachable: True required",
+    "preflight.eve.dev_kvm_ready: True required",
+    "preflight.eve.selected_nodes_ready: True required",
+    "preflight.eve.remote_runner_matches: 0 required",
+    "preflight.eve.remote_disk_free_bytes: positive integer required",
+    "preflight.decision.state: ready required"
+  ],
+  "counts": {
+    "completed": 0,
+    "total": 27
+  },
+  "created_at": "2026-08-25T08:22:18.277918Z",
+  "format": 1,
+  "plan": [
+    {
+      "case_id": "bidir12-1-to-2",
+      "dst": "n2",
+      "src": "n1",
+      "state": "pending",
+      "suite": "bidir12"
+    },
+    {
+      "case_id": "bidir12-2-to-1",
+      "dst": "n1",
+      "src": "n2",
+      "state": "pending",
+      "suite": "bidir12"
+    },
+    {
+      "case_id": "disjoint5-1-to-3",
+      "dst": "n3",
+      "src": "n1",
+      "state": "pending",
+      "suite": "disjoint5"
+    },
+    {
+      "case_id": "disjoint5-2-to-5",
+      "dst": "n5",
+      "src": "n2",
+      "state": "pending",
+      "suite": "disjoint5"
+    },
+    {
+      "case_id": "disjoint5-4-to-7",
+      "dst": "n7",
+      "src": "n4",
+      "state": "pending",
+      "suite": "disjoint5"
+    },
+    {
+      "case_id": "disjoint5-6-to-9",
+      "dst": "n9",
+      "src": "n6",
+      "state": "pending",
+      "suite": "disjoint5"
+    },
+    {
+      "case_id": "disjoint5-8-to-10",
+      "dst": "n10",
+      "src": "n8",
+      "state": "pending",
+      "suite": "disjoint5"
+    },
+    {
+      "case_id": "ring10-1-to-2",
+      "dst": "n2",
+      "src": "n1",
+      "state": "pending",
+      "suite": "ring10"
+    },
+    {
+      "case_id": "ring10-2-to-3",
+      "dst": "n3",
+      "src": "n2",
+      "state": "pending",
+      "suite": "ring10"
+    },
+    {
+      "case_id": "ring10-3-to-4",
+      "dst": "n4",
+      "src": "n3",
+      "state": "pending",
+      "suite": "ring10"
+    },
+    {
+      "case_id": "ring10-4-to-5",
+      "dst": "n5",
+      "src": "n4",
+      "state": "pending",
+      "suite": "ring10"
+    },
+    {
+      "case_id": "ring10-5-to-6",
+      "dst": "n6",
+      "src": "n5",
+      "state": "pending",
+      "suite": "ring10"
+    },
+    {
+      "case_id": "ring10-6-to-7",
+      "dst": "n7",
+      "src": "n6",
+      "state": "pending",
+      "suite": "ring10"
+    },
+    {
+      "case_id": "ring10-7-to-8",
+      "dst": "n8",
+      "src": "n7",
+      "state": "pending",
+      "suite": "ring10"
+    },
+    {
+      "case_id": "ring10-8-to-9",
+      "dst": "n9",
+      "src": "n8",
+      "state": "pending",
+      "suite": "ring10"
+    },
+    {
+      "case_id": "ring10-9-to-10",
+      "dst": "n10",
+      "src": "n9",
+      "state": "pending",
+      "suite": "ring10"
+    },
+    {
+      "case_id": "ring10-10-to-1",
+      "dst": "n1",
+      "src": "n10",
+      "state": "pending",
+      "suite": "ring10"
+    },
+    {
+      "case_id": "reverse5-1-to-6",
+      "dst": "n6",
+      "src": "n1",
+      "state": "pending",
+      "suite": "reverse5"
+    },
+    {
+      "case_id": "reverse5-6-to-1",
+      "dst": "n1",
+      "src": "n6",
+      "state": "pending",
+      "suite": "reverse5"
+    },
+    {
+      "case_id": "reverse5-2-to-7",
+      "dst": "n7",
+      "src": "n2",
+      "state": "pending",
+      "suite": "reverse5"
+    },
+    {
+      "case_id": "reverse5-7-to-2",
+      "dst": "n2",
+      "src": "n7",
+      "state": "pending",
+      "suite": "reverse5"
+    },
+    {
+      "case_id": "reverse5-3-to-8",
+      "dst": "n8",
+      "src": "n3",
+      "state": "pending",
+      "suite": "reverse5"
+    },
+    {
+      "case_id": "reverse5-8-to-3",
+      "dst": "n3",
+      "src": "n8",
+      "state": "pending",
+      "suite": "reverse5"
+    },
+    {
+      "case_id": "reverse5-4-to-9",
+      "dst": "n9",
+      "src": "n4",
+      "state": "pending",
+      "suite": "reverse5"
+    },
+    {
+      "case_id": "reverse5-9-to-4",
+      "dst": "n4",
+      "src": "n9",
+      "state": "pending",
+      "suite": "reverse5"
+    },
+    {
+      "case_id": "reverse5-5-to-10",
+      "dst": "n10",
+      "src": "n5",
+      "state": "pending",
+      "suite": "reverse5"
+    },
+    {
+      "case_id": "reverse5-10-to-5",
+      "dst": "n5",
+      "src": "n10",
+      "state": "pending",
+      "suite": "reverse5"
+    }
+  ],
+  "preflight_ref": "preflight.json",
+  "preflight_sha256": "4a70f8471db8042324881a7224eccfdefc052ebe19f3544916b467602782de0c",
+  "results": {},
+  "state": "blocked",
+  "updated_at": "2026-08-25T08:25:40.289447Z"
+}

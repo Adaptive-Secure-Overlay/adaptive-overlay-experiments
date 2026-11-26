@@ -64,10 +64,10 @@ Using the same 4-node Dual-NAT WAN testbed and constant `3,584 B` padded `CASCAD
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Rust Userspace WG (`boringtun`) | `3` | **`192 ms`** | `23.93 ms` (`10/10`) | — | **`0`** (`T1/T2/T3 = 0`) | `9.09 MiB` |
 | Rust Userspace WG (`boringtun`) | `5` | **`152 ms`** *(1st try; `5.3 s` w/ 1 retry)* | `24.58 ms` (`10/10`) | — | **`0`** (`T1/T2/T3 = 0`) | `8.57 MiB` |
-| Rust Userspace WG (`boringtun`) | `10` | **`566 ms`** *(1st try)* | `24.41 ms` (`10/10`) | **`69.2 / 87.3 Mbps`** (`214,207` `T4` pkts) | **`0`** (`T1/T2/T3 = 0`) | `8.95 MiB` |
+| Rust Userspace WG (`boringtun`, `CCO1` `--no-preconnect`) | `10` | **`540–566 ms`** *(1st try)* | `24.41–24.64 ms` (`10/10`) | **`69.2 / 87.3 Mbps`** (`214,207` `T4` pkts) | **`0`** (`T1/T2/T3 = 0`, `ov_ab = 0` on A & B) | `8.95–9.32 MiB` |
 | Rust + Kernel IPsec (`strongSwan`) | `3` | `1,472 ms` (cold, `--no-preconnect`) | `24.00 ms` (`5/5`) | — | **`0`** (`ike500=0`, `ov_ab=0`) | `9.24 MiB` |
 | Rust + Kernel IPsec (`strongSwan`) | `5` | **`~185 ms`** (warm, `prerouting_raw` fix) | `0%` loss | — | **`0`** (`ike500=0`, `ike4500=0`, `ov_ab=0`) | `8.67 MiB` |
-| Rust + Kernel IPsec (`strongSwan`) | `10` | 1st RTT ok; 2nd RTT hit `11`-frag/hop UDP loss | — | — | **`0`** (`ike500=0`, `ike4500=0`, `ov_ab=0`) | `8.50 MiB` |
+| Rust + Kernel IPsec (`strongSwan`, `CCO1` + `prerouting_raw`) | `10` | **`1,605 ms`** cold / **`843 ms`** warm *(1st try!)* | `23.63–23.91 ms` (`15/15`) | — | **`0`** (`ike500=0`, `ike4500=0`, `ov_ab=0` on A & B) | `9.06 MiB` |
 
 ## Reproducible `pcap` Audit Utility (`audit_wan_pcap.py`)
 

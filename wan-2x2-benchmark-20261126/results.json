@@ -1,0 +1,289 @@
+{
+  "schema": "adaptive-overlay-wan-2x2-benchmark/v1",
+  "date": "2026-11-26",
+  "anonymized": true,
+  "topology": {
+    "nodes": [
+      {
+        "role": "endpoint_a",
+        "label": "Node A",
+        "location": "Residential NAT",
+        "example_ip_rfc5737": "192.0.2.10"
+      },
+      {
+        "role": "relay_x1",
+        "label": "Node X1",
+        "location": "City-1 public VPS",
+        "example_ip_rfc5737": "192.0.2.11"
+      },
+      {
+        "role": "relay_x2",
+        "label": "Node X2",
+        "location": "City-2 public VPS",
+        "example_ip_rfc5737": "192.0.2.12"
+      },
+      {
+        "role": "endpoint_b",
+        "label": "Node B",
+        "location": "City-3 behind NAT router with UDP port forwarding",
+        "example_ip_rfc5737": "192.0.2.13"
+      }
+    ],
+    "underlay_rtt_ms": {
+      "a_to_x1": 8.7,
+      "x1_to_x2_range": [11.1, 12.2],
+      "x2_to_b": 21.9,
+      "direct_a_to_b_approx_range": [21.0, 25.0]
+    },
+    "shared_profile": {
+      "trust_registry_version": 2,
+      "mcc_accept_mode": "first",
+      "mcc_x1_fanout": 2,
+      "mcc_x2_fanout": 2,
+      "mcc_ike_fanout": 1,
+      "rust_overlay_udp_port": 19000,
+      "python_overlay_udp_port": 19001,
+      "deployment": "isolated Docker Compose containers on the same 4 hosts"
+    }
+  },
+  "cells": {
+    "python_kernel_ipsec": {
+      "implementation": "CPython 3.14.10 + cryptography 50.0.2 + strongSwan 6.0.1 + nftables",
+      "control_plane": "IKEv2 (UDP/500, UDP/4500 Non-ESP) over MCC + PRIV_BKEY",
+      "data_plane": "Direct Linux kernel XFRM ESP-in-UDP (UDP/4500)",
+      "image_size_mb": {
+        "relay": 217,
+        "endpoint": 247
+      },
+      "peak_ram_vmhwm_mb": {
+        "relay_range": [41.9, 42.3],
+        "endpoint_range": [41.1, 43.1],
+        "charon_range": [9.4, 11.2]
+      },
+      "handshake_ms": {
+        "cold_preconnect_0": 36109.8,
+        "cold_note": "4 retransmits due to single-threaded serve_forever() blocking in ensure_session().wait(2.0)",
+        "warm_preconnect_1_runs": [234.6, 247.5, 354.0],
+        "warm_preconnect_1_median": 247.5,
+        "warm_hops": 3
+      },
+      "overlay_packets_per_handshake_host_a": {
+        "average": 546,
+        "total_across_3_runs": 1638
+      },
+      "direct_control_leakage": {
+        "direct_ike_500": 0,
+        "direct_ike_4500_nonesp": 0,
+        "direct_overlay_ab": 0
+      },
+      "tunnel_ping_10_ms": {
+        "min": 23.10,
+        "avg": 23.94,
+        "max": 24.43,
+        "loss_pct": 0.0
+      },
+      "iperf3_tcp_10s_mbps": {
+        "stream_1_a_to_b_recv": 70.8,
+        "stream_1_a_to_b_send": 72.8,
+        "stream_4_a_to_b_recv": 71.0,
+        "stream_4_a_to_b_send": 72.6,
+        "stream_4_b_to_a_recv": 87.3,
+        "stream_4_b_to_a_send": 90.8,
+        "payload_transferred_mb_min": 307.8,
+        "direct_esp_packets": 314050
+      },
+      "live_rekey": {
+        "mode": "manual CHILD_SA and IKE_SA rekey over MCC",
+        "child_sa_ms": 132.4,
+        "ike_sa_ms": 88.4,
+        "ping_sent": 40,
+        "ping_lost": 0,
+        "ping_avg_ms": 24.10,
+        "direct_control_leakage": 0,
+        "direct_esp_packets": 240
+      }
+    },
+    "python_kernel_wireguard": {
+      "implementation": "CPython 3.14.10 + cryptography 50.0.2 + Linux kernel wg0 + nftables",
+      "control_plane": "WireGuard Type 1/2/3 over MCC + PRIV_BKEY",
+      "data_plane": "Direct Linux kernel wg0 Type 4 (UDP/4500)",
+      "image_size_mb": {
+        "relay": 217,
+        "endpoint": 248
+      },
+      "peak_ram_vmhwm_mb": {
+        "relay_range": [41.9, 42.3],
+        "endpoint_range": [41.7, 42.4],
+        "endpoint_threads": 12
+      },
+      "handshake_ms": {
+        "cold_preconnect_0_supported": false,
+        "cold_note": "Requires PRECONNECT_ENABLED=1 due to single-threaded sync recv loop",
+        "warm_preconnect_1_approx": 146.0,
+        "warm_including_first_type4_icmp_reply": 167.243
+      },
+      "overlay_packets_per_handshake_host_a": {
+        "total": 354,
+        "via_x1": 168,
+        "via_x2": 186
+      },
+      "direct_control_leakage": {
+        "direct_wg_type1": 0,
+        "direct_wg_type2": 0,
+        "direct_wg_type3": 0,
+        "direct_overlay_ab": 0
+      },
+      "tunnel_ping_10_ms": {
+        "min": 20.65,
+        "avg": 21.03,
+        "max": 21.76,
+        "loss_pct": 0.0
+      },
+      "iperf3_tcp_10s_mbps": {
+        "stream_1_a_to_b_recv": 71.1,
+        "stream_1_a_to_b_send": 73.1,
+        "stream_4_a_to_b_recv": 71.9,
+        "stream_4_a_to_b_send": 74.1,
+        "stream_4_b_to_a_recv": 88.0,
+        "stream_4_b_to_a_send": 91.2,
+        "payload_transferred_mib_min": 306.3
+      },
+      "live_rekey": {
+        "mode": "automatic WireGuard PFS rekey",
+        "interval_s": 121,
+        "ping_sent": 75,
+        "ping_lost": 0,
+        "ping_avg_ms": 21.13,
+        "direct_control_leakage": 0,
+        "direct_type4_packets": 453
+      }
+    },
+    "rust_kernel_ipsec": {
+      "implementation": "Rust cco (--release) + strongSwan 5.9.8 + nftables",
+      "control_plane": "IKEv2 (UDP/500, UDP/4500 Non-ESP) over MCC",
+      "data_plane": "Direct Linux kernel XFRM ESP-in-UDP (UDP/4500)",
+      "image_size_mb": {
+        "relay": 150,
+        "endpoint": 159
+      },
+      "peak_ram_vmhwm_mb": {
+        "relay_range": [8.46, 8.74],
+        "endpoint_range": [9.40, 10.33],
+        "charon_range": [10.6, 10.8]
+      },
+      "handshake_ms": {
+        "cold_preconnect_0": 529.0,
+        "warm_runs": [316.2, 336.5],
+        "hops": 4
+      },
+      "overlay_packets_per_handshake_host_a": {
+        "average": 112
+      },
+      "direct_control_leakage": {
+        "direct_ike_500": 0,
+        "direct_ike_4500_nonesp": 0
+      },
+      "tunnel_ping_10_ms": {
+        "min": 23.38,
+        "avg": 24.46,
+        "max": 31.63,
+        "loss_pct": 0.0
+      },
+      "iperf3_tcp_10s_mbps": {
+        "stream_1_a_to_b_recv": 70.1,
+        "stream_1_a_to_b_send": 71.9,
+        "stream_4_a_to_b_recv": 69.2,
+        "stream_4_a_to_b_send": 70.8,
+        "stream_4_b_to_a_recv": 86.6,
+        "stream_4_b_to_a_send": 89.3,
+        "payload_transferred_mb_min": 301.0,
+        "direct_esp_packets": 305157
+      },
+      "live_rekey": {
+        "mode": "manual CHILD_SA and IKE_SA rekey over MCC",
+        "child_sa_ms_range": [203.7, 275.2],
+        "ike_sa_ms_range": [111.9, 258.1],
+        "ping_sent": 40,
+        "ping_lost": 0,
+        "ping_avg_ms": 23.66,
+        "direct_control_leakage": 0,
+        "direct_esp_packets": 80
+      }
+    },
+    "rust_userspace_wireguard": {
+      "implementation": "100% Rust cco wg-tunnel + boringtun 0.7.1 + /dev/net/tun (zero nftables)",
+      "control_plane": "WireGuard Noise_IKpsk2 (Type 1/2/3) over MCC",
+      "data_plane": "Direct userspace boringtun Type 4 (UDP/4500)",
+      "image_size_mb": {
+        "relay": 150,
+        "endpoint": 151
+      },
+      "container_ram_mib_range": [2.57, 4.94],
+      "handshake_ms": {
+        "cold_preconnect_0": 128.0,
+        "warm": 128.0,
+        "hops": 4
+      },
+      "overlay_packets_per_handshake_host_a": {
+        "average": 188
+      },
+      "direct_control_leakage": {
+        "direct_wg_type1": 0,
+        "direct_wg_type2": 0,
+        "direct_wg_type3": 0
+      },
+      "tunnel_ping_10_ms": {
+        "min": 23.58,
+        "avg": 25.45,
+        "max": 29.82,
+        "loss_pct": 0.0
+      },
+      "iperf3_tcp_10s_mbps": {
+        "stream_1_a_to_b_recv": 67.1,
+        "stream_1_a_to_b_send": 69.7,
+        "stream_4_a_to_b_recv": 70.3,
+        "stream_4_a_to_b_send": 72.9,
+        "stream_4_b_to_a_recv": 86.0,
+        "stream_4_b_to_a_send": 88.6,
+        "kernel_wg0_efficiency_pct_range": [97.7, 97.8],
+        "payload_transferred_mb_min": 309.0,
+        "direct_type4_packets": 307975
+      },
+      "live_rekey": {
+        "mode": "automatic WireGuard PFS rekey",
+        "interval_s": 120,
+        "ping_sent": 62,
+        "ping_lost": 0,
+        "ping_avg_ms": 24.60,
+        "direct_control_leakage": 0,
+        "direct_type4_packets": 132
+      }
+    }
+  },
+  "same_vps_crypto_microbenchmark": {
+    "host_profile": "City-2 Linux x86_64 VPS",
+    "iterations": 200,
+    "python": {
+      "runtime": "CPython 3.14.10 + cryptography 50.0.2",
+      "ed25519_sign_us": 64.08,
+      "ed25519_verify_us": 180.02,
+      "ed25519_total_us": 244.1,
+      "mcc_signed_message_us": 342.7,
+      "mcc_verify_signed_us": 562.35,
+      "mcc_capsule_seal_us": 228.14,
+      "mcc_capsule_open_us": 361.0,
+      "mcc_capsule_total_us": 589.1,
+      "durable_sqlite_3tx_median_ms": 9.64,
+      "durable_sqlite_3tx_p95_ms": 19.25
+    },
+    "rust": {
+      "runtime": "cco --release (pure Rust)",
+      "ed25519_total_us": 130.2,
+      "x25519_hkdf_aes256gcm_seal_open_us": 201.2
+    },
+    "speedup_rust_over_python": {
+      "ed25519": 1.87,
+      "capsule_seal_open": 2.93
+    }
+  }
+}

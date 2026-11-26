@@ -56,6 +56,19 @@ All four configurations were executed on the **exact same 4 physical/virtual WAN
 4. **Userspace Rust `boringtun` reaches `97.7–97.8%` of native kernel `wg0` WAN throughput:** `70.3 / 86.0 Mbps` vs `71.9 / 88.0 Mbps` on the exact same WAN link while eliminating `wireguard.ko`, `strongSwan`, `nftables`, and `CAP_NET_RAW`.
 5. **Zero-loss live PFS rekeying & Dual-NAT `notrack` rule:** All 4 cells rotated keys under continuous ping with `0.0%` loss (`40/40`, `75/75`, `40/40`, `62/62`) and `0` direct control packets, enabled on kernel backends by `nftables` `output_raw` `notrack` rules for direct `ESP-in-UDP` and `WireGuard Type 4`.
 
+## Follow-Up Live WAN `m`-Hop Scaling (`UniversalCascade` `F4`, `K = 2`, `m = 3, 5, 10`)
+
+Using the same 4-node Dual-NAT WAN testbed and constant `3,584 B` padded `CASCADE_*` frames (Rust `cco`), `UniversalCascade` (`--route-mode cascade --hop-model f4 --parallel-chains 2`) was verified across `m = 3, 5, 10` hops:
+
+| Protocol (`F4`, `K = 2`) | `m` | Handshake Latency | Tunnel Ping (`0%` loss) | `iperf3` 4-Stream (`A->B` / `B->A`, recv) | Direct Control (`tcpdump` A & B) | Peak RAM (`VmHWM`) |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Rust Userspace WG (`boringtun`) | `3` | **`192 ms`** | `23.93 ms` (`10/10`) | — | **`0`** (`T1/T2/T3 = 0`) | `9.09 MiB` |
+| Rust Userspace WG (`boringtun`) | `5` | **`152 ms`** *(1st try; `5.3 s` w/ 1 retry)* | `24.58 ms` (`10/10`) | — | **`0`** (`T1/T2/T3 = 0`) | `8.57 MiB` |
+| Rust Userspace WG (`boringtun`) | `10` | **`566 ms`** *(1st try)* | `24.41 ms` (`10/10`) | **`69.2 / 87.3 Mbps`** (`214,207` `T4` pkts) | **`0`** (`T1/T2/T3 = 0`) | `8.95 MiB` |
+| Rust + Kernel IPsec (`strongSwan`) | `3` | `1,472 ms` (cold, `--no-preconnect`) | `24.00 ms` (`5/5`) | — | **`0`** (`ike500=0`, `ov_ab=0`) | `9.24 MiB` |
+| Rust + Kernel IPsec (`strongSwan`) | `5` | **`~185 ms`** (warm, `prerouting_raw` fix) | `0%` loss | — | **`0`** (`ike500=0`, `ike4500=0`, `ov_ab=0`) | `8.67 MiB` |
+| Rust + Kernel IPsec (`strongSwan`) | `10` | 1st RTT ok; 2nd RTT hit `11`-frag/hop UDP loss | — | — | **`0`** (`ike500=0`, `ike4500=0`, `ov_ab=0`) | `8.50 MiB` |
+
 ## Reproducible `pcap` Audit Utility (`audit_wan_pcap.py`)
 
 `audit_wan_pcap.py` parses standard `pcap` captures (Ethernet `DLT=1`, Linux SLL v1 `DLT=113`, Linux SLL v2 `DLT=276` produced by `tcpdump -i any`, and Raw IPv4 `DLT=101`) using only Python's standard library and exits with code `0` iff zero direct control-plane packets and zero direct overlay `A <-> B` packets are present.
